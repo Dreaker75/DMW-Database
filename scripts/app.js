@@ -27,7 +27,7 @@ function DEBUG_DISPLAY() {
     });
 }
 
-// TODO: Function to display the Digimon passed in in the preview
+// Function to display the Digimon passed in in the preview
 function displayPreviewDigimon(digimonID) {
     let template = document.getElementById("digimon-preview");
     let digimonPreviewDiv = document.getElementById("digimon-list");
@@ -36,7 +36,8 @@ function displayPreviewDigimon(digimonID) {
     // Array holding all the different evolutions of this Digimon
     let evolutions = [];
     // Array to hold all the attributes the Digimon has
-    let attributes = [];
+    let typeAttributes = [];
+    let elementAttributes = [];
     // Temp array to check the attributes of all evolutions
     let digimonLeftToCheck = [];
     // Creates a new image for the Digimon's Attribute
@@ -55,11 +56,11 @@ function displayPreviewDigimon(digimonID) {
 
         console.log(digimonToCheck);
         // Save its attributes if they're not already in the array
-        if (!attributes.includes(DIGIMON_DATA[digimonToCheck].type)) {
-            attributes.push(DIGIMON_DATA[digimonToCheck].type);
+        if (!typeAttributes.includes(DIGIMON_DATA[digimonToCheck].type)) {
+            typeAttributes.push(DIGIMON_DATA[digimonToCheck].type);
         }
-        if (!attributes.includes(DIGIMON_DATA[digimonToCheck].element)) {
-            attributes.push(DIGIMON_DATA[digimonToCheck].element);
+        if (!elementAttributes.includes(DIGIMON_DATA[digimonToCheck].element)) {
+            elementAttributes.push(DIGIMON_DATA[digimonToCheck].element);
         }
 
         // Add whether the evolution has a ride mode
@@ -83,7 +84,14 @@ function displayPreviewDigimon(digimonID) {
     
     // Display all the evolution's attributes
     let newAttribute;
-    attributes.forEach(attribute => {
+    typeAttributes.forEach(attribute => {
+        newAttribute = attributeImage.cloneNode(true);
+        newAttribute.src += attribute + ".png";
+        newAttribute.alt = attribute + " Icon";
+        digimonInfo.querySelector('p[data-list=attributes]').appendChild(newAttribute);
+    });
+
+    elementAttributes.forEach(attribute => {
         newAttribute = attributeImage.cloneNode(true);
         newAttribute.src += attribute + ".png";
         newAttribute.alt = attribute + " Icon";

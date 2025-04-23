@@ -726,6 +726,7 @@ const DIGIMON = Object.freeze({
     LUCEMONFM:"LucemonFM",
     LUCEMONSM:"LucemonSM",
     LUCEMON_LARVA:"Lucemon_Larva",
+    LUCEMONX:"LucemonX",
     //#endregion
     //#region LUNAR_KAISERGREYMON
     LUNAR_KAISERGREYMON:"Lunar_KaiserGreymon",
@@ -794,6 +795,7 @@ const DIGIMON = Object.freeze({
 
     // In LALAMON line
     // ROSEMON:"Rosemon",
+    BLOOMLORDMON:"BloomLordmon",
     PALMONX:"PalmonX",
     TOGEMONX:"TogemonX",
     LILYMONX:"LilymonX",
@@ -1023,11 +1025,11 @@ const DIGIMON = Object.freeze({
     //#endregion
     //#region TERRIERMON
     TERRIERMON:"Terriermon",
-    GALGOMON:"Galgomon",
+    GARGOMON:"Gargomon",
     RAPIDMON:"Rapidmon",
-    SAINTGALGOMON:"SaintGalgomon",
-    BLACKSAINTGALGOMON:"BlackSaintGalgomon",
-    SAINTGALGOMON_SHIN:"SaintGalgomon_Shin",
+    SAINTGARGOMON:"SaintGargomon",
+    BLACKSAINTGARGOMON:"BlackSaintGargomon",
+    SAINTGARGOMON_SHIN:"SaintGargomon_Shin",
     //#endregion
     //#region TOYAGUMON
     TOYAGUMON:"ToyAgumon",
@@ -1037,6 +1039,7 @@ const DIGIMON = Object.freeze({
     TOYAGUMON_SUKA:"ToyAgumon_Suka",
     SUKAMON:"Sukamon",
     PLATINUMSUKAMON:"PlatinumSukamon",
+    KINGSUKAMON:"KingSukamon",
     //#endregion
     //#region TSUKAIMON
     TSUKAIMON:"Tsukaimon",
@@ -1085,7 +1088,7 @@ const DIGIMON = Object.freeze({
     ULFORCEVEEDRAMON:"UlforceVeedramon",
     ULFORCEVEEDRAMONX:"UlforceVeedramonX",
     FLADRAMON:"Fladramon",
-    GARGOMON:"Gargomon",
+    GARGOYLEMON:"Gargoylemon",
     MAGNAMON:"Magnamon",
     MAGNAMONX:"MagnamonX",
     //#endregion
@@ -1099,7 +1102,7 @@ const DIGIMON = Object.freeze({
     IMPERIALDRAMONPM_VENGEFUL:"ImperialdramonPM_Vengeful",
     // In VEEMON_VEEDRA line
     // FLADRAMON:"Fladramon",
-    // GARGOMON:"Gargomon",
+    // GARGOYLEMON:"Gargoylemon",
     // MAGNAMON:"Magnamon",
     // MAGNAMONX:"MagnamonX",
     ICYMAGNAMONX:"IcyMagnamonX",
@@ -1199,6 +1202,7 @@ const ATTRIBUTES = {
 }
 
 const STAGE = {
+    INTRAINING:"InTraining",
     ROOKIE:"Rookie",
     ROOKIEX:"Rookie X",
     CHAMPION:"Champion",
@@ -1601,7 +1605,7 @@ DIGIMON_DATA[DIGIMON.DARKTYRANNOMON] = {
     names: {
         japanese:"DarkTyrannomon",
         english:"DarkTyrannomon",
-        game:"DarkTyrannomon",
+        game:"Darktyrannomon",
     },
     type: ATTRIBUTES.VIRUS,
     element: ATTRIBUTES.FIRE,
@@ -1618,7 +1622,7 @@ DIGIMON_DATA[DIGIMON.METALTYRANNOMON] = {
     names: {
         japanese:"MetalTyrannomon",
         english:"MetalTyrannomon",
-        game:"MetalTyrannomon",
+        game:"Metaltyrannomon",
     },
     type: ATTRIBUTES.VIRUS,
     element: ATTRIBUTES.STEEL,
@@ -1898,13 +1902,13 @@ DIGIMON_DATA[DIGIMON.ARKADIMON_CHILD] = {
         english:"Arkadimon (Rookie)",
         game:"Arkadimon (Child)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ROOKIE,
     class: CLASS.NONE,
     rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ARKADIMON_CHILD],
 };
 
@@ -1915,13 +1919,13 @@ DIGIMON_DATA[DIGIMON.ARKADIMON_ADULT] = {
         english:"Arkadimon (Champion)",
         game:"Arkadimon (Adult)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.CHAMPION,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.DA],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ARKADIMON_CHILD],
 };
 
@@ -1932,13 +1936,13 @@ DIGIMON_DATA[DIGIMON.ARKADIMON_PERFECT] = {
         english:"Arkadimon (Ultimate)",
         game:"Arkadimon (Perfect)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ULTIMATE,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.DA],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ARKADIMON_CHILD],
 };
 
@@ -1949,12 +1953,12 @@ DIGIMON_DATA[DIGIMON.ARKADIMON_ULTIMATE] = {
         english:"Arkadimon (Mega)",
         game:"Arkadimon (Ultimate)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.MEGA,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.DA, FAMILY.NSO],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.ARKADIMON_CHILD],
 };
@@ -2024,7 +2028,7 @@ DIGIMON_DATA[DIGIMON.VIKEMON] = {
     class: CLASS.NONE,
     rank: RANK.A,
     family: [FAMILY.DS, FAMILY.NSP],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.ARMADIMON, DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.GOMAMON],
 };
 
@@ -2035,13 +2039,13 @@ DIGIMON_DATA[DIGIMON.SUBMARIMON] = {
         english:"Submarimon",
         game:"Submarimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WATER,
     stage: STAGE.ARMOR,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ARMADIMON],
 };
 //#endregion
@@ -2134,13 +2138,13 @@ DIGIMON_DATA[DIGIMON.BALLISTAMON] = {
         english:"Ballistamon",
         game:"Ballistamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.BALLISTAMON],
 };
 
@@ -2151,13 +2155,13 @@ DIGIMON_DATA[DIGIMON.BALLISTAMON_ULTIMATE] = {
         english:"Ballistamon",
         game:"Ballistamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.BALLISTAMON],
 };
 //#endregion
@@ -2169,13 +2173,13 @@ DIGIMON_DATA[DIGIMON.BEARMON] = {
         english:"Bearmon",
         game:"Bearmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.EARTH,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.BEARMON],
 };
 
@@ -2184,15 +2188,15 @@ DIGIMON_DATA[DIGIMON.GRIZZMON] = {
     names: {
         japanese:"Grizzmon",
         english:"Grizzmon",
-        game:"Grizzlymon",
+        game:"Grizzmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.EARTH,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.BEARMON],
 };
 
@@ -2203,13 +2207,13 @@ DIGIMON_DATA[DIGIMON.GRAPLEOMON] = {
         english:"GrapLeomon",
         game:"GrapLeomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.BEARMON, DIGIMON.ELECMON_DUFT],
 };
 
@@ -2220,13 +2224,13 @@ DIGIMON_DATA[DIGIMON.DINOTIGERMON] = {
         english:"DinoTigermon",
         game:"DinoTigermon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 2),
     base: [DIGIMON.BEARMON],
 };
 
@@ -2235,15 +2239,15 @@ DIGIMON_DATA[DIGIMON.BANCHOLEOMON] = {
     names: {
         japanese:"BanchoLeomon",
         english:"BanchoLeomon",
-        game:"BanchoLeomon",
+        game:"BanchouLeomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.FIRE,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.VB, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.BEARMON, DIGIMON.ELECMON],
 };
 
@@ -2254,30 +2258,30 @@ DIGIMON_DATA[DIGIMON.MARSMON] = {
         english:"Marsmon",
         game:"Marsmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.FIRE,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.VB, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.BEARMON],
 };
 
 DIGIMON_DATA[DIGIMON.DINOTIGERMONX] = {
     id: DIGIMON.DINOTIGERMONX,
     names: {
-        japanese:"DinoTigermon X",
-        english:"DinoTigermon X",
-        game:"DinoTigermon X",
+        japanese:"DinoTigermon (X-Antibody System)",
+        english:"DinoTigermon (X-Antibody System)",
+        game:"DinoTigermon (X-Anti)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGAX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.BEARMON],
 };
 //#endregion
@@ -2627,15 +2631,15 @@ DIGIMON_DATA[DIGIMON.COMMANDRAMON] = {
     names: {
         japanese:"Commandramon",
         english:"Commandramon",
-        game:"Commandramon",
+        game:"CommanDramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.COMMANDRAMON],
 };
 
@@ -2644,15 +2648,15 @@ DIGIMON_DATA[DIGIMON.SEALSDRAMON] = {
     names: {
         japanese:"Sealsdramon",
         english:"Sealsdramon",
-        game:"Sealsdramon",
+        game:"SealsDramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.COMMANDRAMON],
 };
 
@@ -2661,15 +2665,15 @@ DIGIMON_DATA[DIGIMON.TANKDRAMON] = {
     names: {
         japanese:"Tankdramon",
         english:"Tankdramon",
-        game:"Tankdramon",
+        game:"TankDramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.COMMANDRAMON],
 };
 
@@ -2680,13 +2684,13 @@ DIGIMON_DATA[DIGIMON.DARKDRAMON] = {
         english:"Darkdramon",
         game:"Darkdramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.COMMANDRAMON],
 };
 //#endregion
@@ -2801,13 +2805,13 @@ DIGIMON_DATA[DIGIMON.DOBERMON] = {
         english:"Dobermon",
         game:"Dobermon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.DOBERMON],
 };
 
@@ -2818,13 +2822,13 @@ DIGIMON_DATA[DIGIMON.CERBERUMON] = {
         english:"Cerberusmon",
         game:"Cerberusmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.UK, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DOBERMON, DIGIMON.DOGGYMON],
 };
 
@@ -2835,13 +2839,13 @@ DIGIMON_DATA[DIGIMON.ANUBIMON] = {
         english:"Anubismon",
         game:"Anubimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DOBERMON, DIGIMON.DOGGYMON],
 };
 //#endregion
@@ -2853,13 +2857,13 @@ DIGIMON_DATA[DIGIMON.DOGGYMON] = {
         english:"Doggymon",
         game:"Doggymon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.EARTH,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DOGGYMON],
 };
 
@@ -2875,13 +2879,13 @@ DIGIMON_DATA[DIGIMON.DOKUNEMON] = {
         english:"Dokunemon",
         game:"Dokunemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.EARTH,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DOKUNEMON],
 };
 
@@ -2892,13 +2896,13 @@ DIGIMON_DATA[DIGIMON.DOKUGUMON] = {
         english:"Dokugumon",
         game:"Dokugumon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.UK, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DOKUNEMON],
 };
 
@@ -2907,15 +2911,15 @@ DIGIMON_DATA[DIGIMON.ARUKENIMON] = {
     names: {
         japanese:"Arukenimon",
         english:"Arukenimon",
-        game:"Arukenimon",
+        game:"Archnemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.UK, FAMILY.JT],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DOKUNEMON],
 };
 
@@ -2926,13 +2930,13 @@ DIGIMON_DATA[DIGIMON.PARASIMON] = {
         english:"Parasimon",
         game:"Parasimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.DOKUNEMON],
 };
 //#endregion
@@ -2944,13 +2948,13 @@ DIGIMON_DATA[DIGIMON.DORULUMON] = {
         english:"Dorulumon",
         game:"Dorulumon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DORULUMON],
 };
 
@@ -2961,13 +2965,13 @@ DIGIMON_DATA[DIGIMON.DORULUMON_ULTIMATE] = {
         english:"Dorulumon (Mega)",
         game:"Dorulumon (Mega)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DORULUMON],
 };
 //#endregion
@@ -2996,13 +3000,13 @@ DIGIMON_DATA[DIGIMON.DORUGAMON] = {
         english:"Dorugamon",
         game:"Dorugamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DORUMON],
 };
 
@@ -3013,13 +3017,13 @@ DIGIMON_DATA[DIGIMON.DORUGREMON] = {
         english:"DoruGreymon",
         game:"DoruGreymon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.DORUMON],
 };
 
@@ -3030,13 +3034,13 @@ DIGIMON_DATA[DIGIMON.DORUGORAMON] = {
         english:"Dorugoramon",
         game:"Dorugoramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DORUMON],
 };
 
@@ -3045,7 +3049,7 @@ DIGIMON_DATA[DIGIMON.DORUMONX] = {
     names: {
         japanese:"Dorumon (X-Antibody System)",
         english:"Dorumon (X-Antibody System)",
-        game:"Dorumon (X-Antibody System)",
+        game:"Dorumon (X-Anti)",
     },
     type: ATTRIBUTES.DATA,
     element: ATTRIBUTES.STEEL,
@@ -3062,15 +3066,15 @@ DIGIMON_DATA[DIGIMON.DORUGAMONX] = {
     names: {
         japanese:"Dorugamon (X-Antibody System)",
         english:"Dorugamon (X-Antibody System)",
-        game:"Dorugamon (X-Antibody System)",
+        game:"Dorugamon (X-Anti)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.CHAMPIONX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DORUMON],
 };
 
@@ -3081,13 +3085,13 @@ DIGIMON_DATA[DIGIMON.DORUGREMONX] = {
         english:"DoruGreymon (X-Antibody System)",
         game:"DoruGreymon (X-Antibody System)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.ULTIMATEX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 3),
     base: [DIGIMON.DORUMON],
 };
 
@@ -3098,13 +3102,13 @@ DIGIMON_DATA[DIGIMON.DORUGORAMONX] = {
         english:"Dorugoramon (X-Antibody System)",
         game:"Dorugoramon (X-Antibody System)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGAX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DORUMON],
 };
 
@@ -3115,12 +3119,12 @@ DIGIMON_DATA[DIGIMON.GAIOUMON] = {
         english:"Gaioumon",
         game:"Gaioumon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGAX,
     class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    rank: RANK.SSS,
+    family: [FAMILY.NSP, FAMILY.DR],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.DORUMON],
 };
@@ -3404,13 +3408,13 @@ DIGIMON_DATA[DIGIMON.DRACMON] = {
         english:"Dracmon",
         game:"Dracmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3421,13 +3425,13 @@ DIGIMON_DATA[DIGIMON.SANGLOUPMON] = {
         english:"Sangloupmon",
         game:"Sangloupmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3438,13 +3442,13 @@ DIGIMON_DATA[DIGIMON.MATADORMON] = {
         english:"Matadormon",
         game:"Matadormon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3455,13 +3459,13 @@ DIGIMON_DATA[DIGIMON.GRANDRACMON] = {
         english:"GranDracmon",
         game:"GranDracmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3472,13 +3476,13 @@ DIGIMON_DATA[DIGIMON.DRACMONX] = {
         english:"Dracmon (X-Antibody System)",
         game:"Dracmon (X-Antibody System)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ROOKIEX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3489,13 +3493,13 @@ DIGIMON_DATA[DIGIMON.SANGLOUPMONX] = {
         english:"Sangloupmon (X-Antibody System)",
         game:"Sangloupmon (X-Antibody System)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.CHAMPIONX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 3),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3506,13 +3510,13 @@ DIGIMON_DATA[DIGIMON.MATADORMONX] = {
         english:"Matadormon (X-Antibody System)",
         game:"Matadormon (X-Antibody System)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ULTIMATEX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRACMON],
 };
 
@@ -3523,13 +3527,13 @@ DIGIMON_DATA[DIGIMON.GRANDRACMONX] = {
         english:"GranDracmon (X-Antibody System)",
         game:"GranDracmon (X-Antibody System)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.MEGAX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 8),
     base: [DIGIMON.DRACMON],
 };
 //#endregion
@@ -3666,13 +3670,13 @@ DIGIMON_DATA[DIGIMON.DRIMOGEMON] = {
         english:"Drimogemon",
         game:"Drimogemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.EARTH,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.DRIMOGEMON],
 };
 
@@ -3683,13 +3687,13 @@ DIGIMON_DATA[DIGIMON.DIGMON] = {
         english:"Digmon",
         game:"Digmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.EARTH,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.JT, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRIMOGEMON],
 };
 
@@ -3700,13 +3704,13 @@ DIGIMON_DATA[DIGIMON.GIROMON] = {
         english:"Giromon",
         game:"Giromon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRIMOGEMON],
 };
 
@@ -3717,13 +3721,13 @@ DIGIMON_DATA[DIGIMON.HIANDROMON] = {
         english:"HiAndromon",
         game:"HiAndromon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRIMOGEMON, DIGIMON.HAGURUMON_GUARDRO],
 };
 
@@ -3734,13 +3738,13 @@ DIGIMON_DATA[DIGIMON.CRANIUMON] = {
         english:"Craniummon",
         game:"Craniummon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.DRIMOGEMON, DIGIMON.HAGURUMON_GUARDRO],
 };
 
@@ -3753,10 +3757,10 @@ DIGIMON_DATA[DIGIMON.CRANIUMONX] = {
     },
     type: ATTRIBUTES.VACCINE,
     element: ATTRIBUTES.STEEL,
-    stage: STAGE.TODO,
+    stage: STAGE.BURST_MODEX,
     class: CLASS.SK,
     rank: RANK.SSS,
-    family: [FAMILY.TODO],
+    family: [FAMILY.VB],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.DRIMOGEMON, DIGIMON.HAGURUMON_GUARDRO],
 };
@@ -3769,13 +3773,13 @@ DIGIMON_DATA[DIGIMON.ELECMON] = {
         english:"Elecmon",
         game:"Elecmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ELECMON],
 };
 
@@ -3786,13 +3790,13 @@ DIGIMON_DATA[DIGIMON.LEOMON] = {
         english:"Leomon",
         game:"Leomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.FIRE,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ELECMON, DIGIMON.ELECMON_DUFT],
 };
 
@@ -3803,13 +3807,13 @@ DIGIMON_DATA[DIGIMON.PANJYAMON] = {
         english:"Panjyamon",
         game:"Panjyamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.ICE,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.ELECMON],
 };
 
@@ -3820,13 +3824,13 @@ DIGIMON_DATA[DIGIMON.SABERLEOMON] = {
         english:"SaberLeomon",
         game:"SaberLeomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 2),
     base: [DIGIMON.ELECMON],
 };
 
@@ -4180,13 +4184,13 @@ DIGIMON_DATA[DIGIMON.FLORAMON] = {
         english:"Floramon",
         game:"Floramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.WG, FAMILY.JT],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.FLORAMON],
 };
 
@@ -4197,13 +4201,13 @@ DIGIMON_DATA[DIGIMON.VEGIEMON] = {
         english:"Vegiemon",
         game:"Vegiemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WOOD,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.UK, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.FLORAMON],
 };
 
@@ -4214,13 +4218,13 @@ DIGIMON_DATA[DIGIMON.BLOSSOMON] = {
         english:"Blossomon",
         game:"Blossomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.FLORAMON, DIGIMON.KIWIMON],
 };
 
@@ -4231,13 +4235,13 @@ DIGIMON_DATA[DIGIMON.LOTUSMON] = {
         english:"Lotusmon",
         game:"Lotusmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.FLORAMON],
 };
 //#endregion
@@ -4722,13 +4726,13 @@ DIGIMON_DATA[DIGIMON.DEVIDRAMON] = {
         english:"Devidramon",
         game:"Devidramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.CHAMPION,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.DR, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GAZIMON],
 };
 
@@ -4739,13 +4743,13 @@ DIGIMON_DATA[DIGIMON.MEPHISMON] = {
         english:"Mephistomon",
         game:"Mephismon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ULTIMATE,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.VB, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GAZIMON],
 };
 
@@ -4756,13 +4760,13 @@ DIGIMON_DATA[DIGIMON.GULFMON] = {
         english:"Gulfmon",
         game:"Gulfmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.MEGA,
-    class: CLASS.NONE,
-    rank: RANK.NONE,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.TODO,
+    rank: RANK.TODO,
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.GAZIMON],
 };
 //#endregion
@@ -4831,13 +4835,13 @@ DIGIMON_DATA[DIGIMON.GIZAMON] = {
         english:"Gizamon",
         game:"Gizamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GIZAMON],
 };
 
@@ -4853,15 +4857,15 @@ DIGIMON_DATA[DIGIMON.GIZUMONAT] = {
     names: {
         japanese:"Gizumon AT",
         english:"Gizumon AT",
-        game:"Gizumon AT",
+        game:"GizumonAT",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GIZUMONAT],
 };
 
@@ -4870,15 +4874,15 @@ DIGIMON_DATA[DIGIMON.GIZUMONXT] = {
     names: {
         japanese:"Gizumon XT",
         english:"Gizumon XT",
-        game:"Gizumon XT",
+        game:"GizumonXT",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GIZUMONAT],
 };
 //#endregion
@@ -4890,13 +4894,13 @@ DIGIMON_DATA[DIGIMON.GOBLIMON] = {
         english:"Goblimon",
         game:"Goblimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ROOKIE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GOBLIMON],
 };
 
@@ -4907,13 +4911,13 @@ DIGIMON_DATA[DIGIMON.OGREMON] = {
         english:"Ogremon",
         game:"Ogremon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GOBLIMON],
 };
 
@@ -4924,13 +4928,13 @@ DIGIMON_DATA[DIGIMON.ETEMON] = {
         english:"Etemon",
         game:"Etemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS, FAMILY.UK, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.GOBLIMON],
 };
 
@@ -5638,13 +5642,13 @@ DIGIMON_DATA[DIGIMON.HAGURUMON] = {
         english:"Hagurumon (Mechanorimon)",
         game:"Hagurumon (Mechanorimon)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.HAGURUMON],
 };
 
@@ -5653,15 +5657,15 @@ DIGIMON_DATA[DIGIMON.MECHANORIMON] = {
     names: {
         japanese:"Mechanorimon",
         english:"Mechanorimon",
-        game:"Mechanorimon",
+        game:"MechaNorimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.HAGURUMON, DIGIMON.HAGURUMON_APOCALY],
 };
 
@@ -5670,15 +5674,15 @@ DIGIMON_DATA[DIGIMON.MEGADRAMON] = {
     names: {
         japanese:"Megadramon",
         english:"Megadramon",
-        game:"Megadramon",
+        game:"MegaDramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.WG, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.HAGURUMON, DIGIMON.HAGURUMON_APOCALY],
 };
 
@@ -5692,12 +5696,12 @@ DIGIMON_DATA[DIGIMON.CHAOSDRAMON] = {
         english:"Chaosdramon",
         game:"Chaosdramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.ME],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.HAGURUMON],
 };
@@ -5709,12 +5713,12 @@ DIGIMON_DATA[DIGIMON.CHAOSDRAMONX] = {
         english:"Chaosdramon X",
         game:"Chaosdramon X",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.BURST_MODEX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.ME],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.HAGURUMON],
 };
@@ -5743,15 +5747,15 @@ DIGIMON_DATA[DIGIMON.GUARDROMON] = {
     names: {
         japanese:"Guardromon",
         english:"Guardromon",
-        game:"Guardromon",
+        game:"Gardromon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.HAGURUMON_GUARDRO],
 };
 
@@ -5762,13 +5766,13 @@ DIGIMON_DATA[DIGIMON.ANDROMON] = {
         english:"Andromon",
         game:"Andromon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.HAGURUMON_GUARDRO],
 };
 
@@ -6192,13 +6196,13 @@ DIGIMON_DATA[DIGIMON.KAMEMON] = {
         english:"Kamemon",
         game:"Kamemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KAMEMON],
 };
 
@@ -6209,13 +6213,13 @@ DIGIMON_DATA[DIGIMON.GAWAPPAMON] = {
         english:"Gawappamon",
         game:"Gawappamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KAMEMON],
 };
 
@@ -6226,13 +6230,13 @@ DIGIMON_DATA[DIGIMON.SHAWUJINMON] = {
         english:"Shawujinmon",
         game:"Shawujingmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KAMEMON],
 };
 
@@ -6243,13 +6247,13 @@ DIGIMON_DATA[DIGIMON.JUMBOGAMEMON] = {
         english:"JumboGamemon",
         game:"JumboGamemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KAMEMON],
 };
 //#endregion
@@ -6347,13 +6351,13 @@ DIGIMON_DATA[DIGIMON.KIWIMON] = {
         english:"Kiwimon",
         game:"Kiwimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KIWIMON],
 };
 
@@ -6367,13 +6371,13 @@ DIGIMON_DATA[DIGIMON.GRYPHONMON] = {
         english:"Gryphonmon",
         game:"Gryphonmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 2),
     base: [DIGIMON.KIWIMON],
 };
 
@@ -6384,13 +6388,13 @@ DIGIMON_DATA[DIGIMON.SINDURAMON] = {
         english:"Sinduramon",
         game:"Sinduramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KIWIMON],
 };
 //#endregion
@@ -6402,13 +6406,13 @@ DIGIMON_DATA[DIGIMON.KOKUWAMON] = {
         english:"Kokuwamon",
         game:"Kokuwamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOKUWAMON],
 };
 
@@ -6419,13 +6423,13 @@ DIGIMON_DATA[DIGIMON.THUNDERMON] = {
         english:"Thunderballmon",
         game:"Thunderballmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOKUWAMON],
 };
 
@@ -6436,13 +6440,13 @@ DIGIMON_DATA[DIGIMON.MAMEMON] = {
         english:"Mamemon",
         game:"Mamemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOKUWAMON],
 };
 
@@ -6453,13 +6457,13 @@ DIGIMON_DATA[DIGIMON.BIGMAMEMON] = {
         english:"BigMamemon",
         game:"BigMamemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOKUWAMON],
 };
 
@@ -6470,13 +6474,13 @@ DIGIMON_DATA[DIGIMON.PRINCEMAMEMON] = {
         english:"PrinceMamemon",
         game:"PrinceMamemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.THUNDER,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOKUWAMON],
 };
 //#endregion
@@ -6488,13 +6492,13 @@ DIGIMON_DATA[DIGIMON.KOTEMON] = {
         english:"Kotemon (Gladimon)",
         game:"Kotemon (Gladimon)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.FIRE,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOTEMON],
 };
 
@@ -6505,13 +6509,13 @@ DIGIMON_DATA[DIGIMON.GLADIMON] = {
         english:"Gladimon",
         game:"Gladimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOTEMON],
 };
 
@@ -6522,13 +6526,13 @@ DIGIMON_DATA[DIGIMON.KNIGHTMON] = {
         english:"Knightmon",
         game:"Knightmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.VB, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOTEMON],
 };
 
@@ -6539,13 +6543,13 @@ DIGIMON_DATA[DIGIMON.LORDKNIGHTMON] = {
         english:"LordKnightmon",
         game:"LordKnightmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.KOTEMON],
 };
 
@@ -6556,12 +6560,12 @@ DIGIMON_DATA[DIGIMON.LORDKNIGHTMONX] = {
         english:"LordKnightmon X",
         game:"LordKnightmon X",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGAX,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.VB, FAMILY.ME],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.KOTEMON],
 };
@@ -6578,13 +6582,13 @@ DIGIMON_DATA[DIGIMON.MUSYAMON] = {
         english:"Musyamon",
         game:"Musyamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOTEMON_MUSYA],
 };
 
@@ -6595,13 +6599,13 @@ DIGIMON_DATA[DIGIMON.ASURAMON] = {
         english:"Asuramon",
         game:"Asuramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.FIRE,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.VB, FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOTEMON_MUSYA],
 };
 
@@ -6612,13 +6616,13 @@ DIGIMON_DATA[DIGIMON.ZANBAMON] = {
         english:"Zanbamon",
         game:"Zanbamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.DA, FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.KOTEMON_MUSYA],
 };
 //#endregion
@@ -6932,13 +6936,13 @@ DIGIMON_DATA[DIGIMON.LOPMON] = {
         english:"Lopmon",
         game:"Lopmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.ICE,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 
@@ -6947,15 +6951,15 @@ DIGIMON_DATA[DIGIMON.WENDIMON] = {
     names: {
         japanese:"Wendimon",
         english:"Wendigomon",
-        game:"Wendimon",
+        game:"Wendigomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.NSO, FAMILY.DA],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 
@@ -6966,13 +6970,13 @@ DIGIMON_DATA[DIGIMON.ANTYLAMON] = {
         english:"Antylamon",
         game:"Antylamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 
@@ -6983,13 +6987,13 @@ DIGIMON_DATA[DIGIMON.CHERUBIMON_AKU] = {
         english:"Cherubimon (Vice)",
         game:"Cherubimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.LOPMON],
 };
 
@@ -7000,13 +7004,13 @@ DIGIMON_DATA[DIGIMON.TURUIEMON] = {
         english:"Turuiemon",
         game:"Turuiemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 
@@ -7015,15 +7019,15 @@ DIGIMON_DATA[DIGIMON.ANTYLAMON_DEVA] = {
     names: {
         japanese:"Antylamon (Deva)",
         english:"Antylamon (Deva)",
-        game:"Antylamon (Deva)",
+        game:"Antylamon Deva",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.WG, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 
@@ -7032,15 +7036,15 @@ DIGIMON_DATA[DIGIMON.CHERUBIMON_ZEN] = {
     names: {
         japanese:"Cherubimon (Zen)",
         english:"Cherubimon (Virtue)",
-        game:"Cherubimon (White)",
+        game:"Cherubimon White",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.WG, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 
@@ -7049,15 +7053,15 @@ DIGIMON_DATA[DIGIMON.CHERUBIMON_ZENBG] = {
     names: {
         japanese:"Black-Gear Cherubimon (Zen)",
         english:"Black-Gear Cherubimon (Virtue)",
-        game:"Black-Gear Cherubimon (White)",
+        game:"Black-Gear Cherubimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.WG, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LOPMON],
 };
 //#endregion
@@ -7147,6 +7151,23 @@ DIGIMON_DATA[DIGIMON.LUCEMON_LARVA] = {
     ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.LUCEMON],
 };
+
+DIGIMON_DATA[DIGIMON.LUCEMONX] = {
+    id: DIGIMON.LUCEMONX,
+    names: {
+        japanese:"Lucemon X",
+        english:"Lucemon X",
+        game:"Lucemon X",
+    },
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.BURST_MODEX,
+    class: CLASS.SK,
+    rank: RANK.SSS_PLUS,
+    family: [FAMILY.NSO, FAMILY.DA, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    base: [DIGIMON.LUCEMON],
+};
 //#endregion
 //#region LUNAR_KAISERGREYMON
 DIGIMON_DATA[DIGIMON.LUNAR_KAISERGREYMON] = {
@@ -7227,13 +7248,13 @@ DIGIMON_DATA[DIGIMON.MEICOOMON] = {
         english:"Meicoomon",
         game:"Meicoomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MEICOOMON],
 };
 
@@ -7242,15 +7263,15 @@ DIGIMON_DATA[DIGIMON.MEICRACKMONVM] = {
     names: {
         japanese:"Meicrackmon (Vicious Mode)",
         english:"Meicrackmon (Vicious Mode)",
-        game:"Meicrackmon (Vicious Mode)",
+        game:"Meicrackmon: Vicious Mode",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MEICOOMON],
 };
 
@@ -7261,12 +7282,12 @@ DIGIMON_DATA[DIGIMON.RAGUELMON] = {
         english:"Raguelmon",
         game:"Raguelmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.UK],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.MEICOOMON],
 };
@@ -7297,13 +7318,13 @@ DIGIMON_DATA[DIGIMON.MONODRAMON] = {
         english:"Monodramon",
         game:"Monodramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP, FAMILY.ME, FAMILY.DR],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MONODRAMON],
 };
 
@@ -7314,13 +7335,13 @@ DIGIMON_DATA[DIGIMON.STRIKEDRAMON] = {
         english:"Strikedramon",
         game:"Strikedramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.FIRE,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MONODRAMON],
 };
 
@@ -7329,15 +7350,15 @@ DIGIMON_DATA[DIGIMON.CYBERDRAMON] = {
     names: {
         japanese:"Cyberdramon",
         english:"Cyberdramon",
-        game:"Cyberdramon",
+        game:"CyberDramon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.ME, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MONODRAMON],
 };
 
@@ -7348,13 +7369,13 @@ DIGIMON_DATA[DIGIMON.JUSTIMON] = {
         english:"Justimon",
         game:"Justimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.MEGA,
+    class: CLASS.NONE,
+    rank: RANK.A,
+    family: [FAMILY.ME, FAMILY.VB, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MONODRAMON, DIGIMON.REVOLMON, DIGIMON.STARMON],
 };
 
@@ -7365,12 +7386,12 @@ DIGIMON_DATA[DIGIMON.FUJINMON] = {
         english:"Fujinmon",
         game:"Fujinmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.BURST_MODE,
+    class: CLASS.NONE,
+    rank: RANK.S_PLUS,
+    family: [FAMILY.WG],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.MONODRAMON, DIGIMON.REVOLMON, DIGIMON.STARMON],
 };
@@ -7382,12 +7403,12 @@ DIGIMON_DATA[DIGIMON.FUJINMONBG] = {
         english:"Black-Gear Fujinmon",
         game:"Black-Gear Fujinmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.WG],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.MONODRAMON, DIGIMON.REVOLMON, DIGIMON.STARMON],
 };
@@ -7400,13 +7421,13 @@ DIGIMON_DATA[DIGIMON.MUSHMON] = {
         english:"Mushroomon",
         game:"Mushroomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.WG, FAMILY.JT],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MUSHMON],
 };
 
@@ -7434,13 +7455,13 @@ DIGIMON_DATA[DIGIMON.ARGOMON_ULTIMATE] = {
         english:"Argomon (Ultimate)",
         game:"Argomon (Ultimate)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.JT],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MUSHMON],
 };
 
@@ -7451,13 +7472,13 @@ DIGIMON_DATA[DIGIMON.ARGOMON_MEGA] = {
         english:"Argomon (Mega)",
         game:"Argomon (Mega)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.JT],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.MUSHMON],
 };
 //#endregion
@@ -7469,13 +7490,13 @@ DIGIMON_DATA[DIGIMON.OGUDOMON_WEAKENED] = {
         english:"Ogudomon (Weakened)",
         game:"Ogudomon (Weakened)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.VARIANT,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.OGUDOMON_WEAKENED],
 };
 
@@ -7487,11 +7508,11 @@ DIGIMON_DATA[DIGIMON.OGUDOMON] = {
         game:"Ogudomon",
     },
     type: ATTRIBUTES.VIRUS,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.VARIANT,
+    class: CLASS.SK,
     rank: RANK.SSS,
-    family: [FAMILY.TODO],
+    family: [FAMILY.NSO],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.OGUDOMON_WEAKENED],
 };
@@ -7521,7 +7542,7 @@ DIGIMON_DATA[DIGIMON.OROCHIMON] = {
         english:"Orochimon",
         game:"Orochimon",
     },
-    type: ATTRIBUTES.VIRUS,
+    type: ATTRIBUTES.UNKNOWN,
     element: ATTRIBUTES.WATER,
     stage: STAGE.VARIANT,
     class: CLASS.SUP,
@@ -7539,13 +7560,13 @@ DIGIMON_DATA[DIGIMON.OTAMAMON] = {
         english:"Otamamon",
         game:"Otamamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP, FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.OTAMAMON],
 };
 
@@ -7556,13 +7577,13 @@ DIGIMON_DATA[DIGIMON.GEKOMON] = {
         english:"Gekomon",
         game:"Gekomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.OTAMAMON],
 };
 
@@ -7571,15 +7592,15 @@ DIGIMON_DATA[DIGIMON.TONOSAMAGEKOMON] = {
     names: {
         japanese:"TonosamaGekomon",
         english:"ShogunGekomon",
-        game:"TonosamaGekomon",
+        game:"Tonosama Gekomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.OTAMAMON],
 };
 
@@ -7590,13 +7611,13 @@ DIGIMON_DATA[DIGIMON.PUKUMON] = {
         english:"Pukumon",
         game:"Pukumon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.OTAMAMON],
 };
 //#endregion
@@ -7723,6 +7744,23 @@ DIGIMON_DATA[DIGIMON.PALMON_ORIGINAL].base = [DIGIMON.PALMON_ORIGINAL];
 // In LALAMON line
 // DIGIMON_DATA[DIGIMON.ROSEMON] = {};
 
+DIGIMON_DATA[DIGIMON.BLOOMLORDMON] = {
+    id: DIGIMON.BLOOMLORDMON,
+    names: {
+        japanese:"BloomLordmon",
+        english:"BloomLordmon",
+        game:"BloomLordmon",
+    },
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.MEGA,
+    class: CLASS.AA,
+    rank: RANK.SSS_PLUS,
+    family: [FAMILY.JT, FAMILY.UK, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    base: [DIGIMON.PALMON],
+};
+
 DIGIMON_DATA[DIGIMON.PALMONX] = {
     id: DIGIMON.PALMONX,
     names: {
@@ -7749,9 +7787,9 @@ DIGIMON_DATA[DIGIMON.TOGEMONX] = {
     },
     type: ATTRIBUTES.DATA,
     element: ATTRIBUTES.WOOD,
-    stage: STAGE.CHAMPION,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
+    stage: STAGE.CHAMPIONX,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
     family: [FAMILY.NSP],
     ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.PALMON],
@@ -7766,9 +7804,9 @@ DIGIMON_DATA[DIGIMON.LILYMONX] = {
     },
     type: ATTRIBUTES.DATA,
     element: ATTRIBUTES.WOOD,
-    stage: STAGE.ULTIMATE,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
+    stage: STAGE.ULTIMATEX,
+    class: CLASS.NONE,
+    rank: RANK.S,
     family: [FAMILY.WG],
     ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.PALMON],
@@ -7783,9 +7821,9 @@ DIGIMON_DATA[DIGIMON.ROSEMONX] = {
     },
     type: ATTRIBUTES.DATA,
     element: ATTRIBUTES.WOOD,
-    stage: STAGE.MEGA,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
+    stage: STAGE.MEGAX,
+    class: CLASS.NONE,
+    rank: RANK.SS,
     family: [FAMILY.WG, FAMILY.NSP, FAMILY.JT],
     ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.PALMON],
@@ -7933,13 +7971,13 @@ DIGIMON_DATA[DIGIMON.PEGASMON] = {
         english:"Pegasusmon",
         game:"Pegasmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.LIGHT,
     stage: STAGE.ARMOR,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.VB, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 3),
     base: [DIGIMON.PATAMON],
 };
 //#endregion
@@ -7954,15 +7992,15 @@ DIGIMON_DATA[DIGIMON.PAWNCHESSMONB] = {
     names: {
         japanese:"PawnChessmon (Black)",
         english:"PawnChessmon (Black)",
-        game:"PawnChessmon (Black)",
+        game:"PawnChessmon Black",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.PAWNCHESSMONB],
 };
 
@@ -7973,13 +8011,13 @@ DIGIMON_DATA[DIGIMON.KNIGHTCHESSMONB] = {
         english:"KnightChessmon (Black)",
         game:"KnightChessmon (Black)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.PAWNCHESSMONB],
 };
 
@@ -7990,13 +8028,13 @@ DIGIMON_DATA[DIGIMON.ROOKCHESSMON] = {
         english:"RookChessmon",
         game:"RookChessmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.PAWNCHESSMONB],
 };
 
@@ -8007,13 +8045,13 @@ DIGIMON_DATA[DIGIMON.QUEENCHESSMON] = {
         english:"QueenChessmon",
         game:"QueenChessmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.PAWNCHESSMONB],
 };
 //#endregion
@@ -8834,13 +8872,13 @@ DIGIMON_DATA[DIGIMON.RAREMON] = {
         english:"Raremon (Champion)",
         game:"Raremon (Champion)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.RAREMON],
 };
 
@@ -8851,13 +8889,13 @@ DIGIMON_DATA[DIGIMON.RAREMON_ULTIMATE] = {
         english:"Raremon (Mega)",
         game:"Raremon (Mega)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.RAREMON],
 };
 //#endregion
@@ -8971,7 +9009,7 @@ DIGIMON_DATA[DIGIMON.SAKUYAMON_SHIN] = {
         english:"Sakuyamon (Shin)",
         game:"Sakuyamon (Shin)",
     },
-    type: ATTRIBUTES.DATA,
+    type: ATTRIBUTES.UNKNOWN,
     element: ATTRIBUTES.DARK,
     stage: STAGE.MEGA,
     class: CLASS.SUP,
@@ -8989,13 +9027,13 @@ DIGIMON_DATA[DIGIMON.REVOLMON] = {
         english:"Deputymon",
         game:"Deputymon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.REVOLMON],
 };
 
@@ -9006,13 +9044,13 @@ DIGIMON_DATA[DIGIMON.SUPERSTARMON] = {
         english:"SuperStarmon",
         game:"SuperStarmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.REVOLMON, DIGIMON.STARMON],
 };
 
@@ -9184,13 +9222,13 @@ DIGIMON_DATA[DIGIMON.SHAMAMON] = {
         english:"Sharmamon",
         game:"Sharmamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SHAMAMON],
 };
 
@@ -9201,13 +9239,13 @@ DIGIMON_DATA[DIGIMON.HANUMON] = {
         english:"Apemon",
         game:"Apemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.EARTH,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO, FAMILY.VB, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SHAMAMON],
 };
 
@@ -9218,13 +9256,13 @@ DIGIMON_DATA[DIGIMON.MAMMON] = {
         english:"Mammothmon",
         game:"Mammothmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.ICE,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SHAMAMON],
 };
 
@@ -9235,13 +9273,13 @@ DIGIMON_DATA[DIGIMON.SKULLMAMMON] = {
         english:"SkullMammothmon",
         game:"SkullMammothmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.SHAMAMON],
 };
 //#endregion
@@ -9341,30 +9379,30 @@ DIGIMON_DATA[DIGIMON.SPARROWMON] = {
         english:"Sparrowmon",
         game:"Sparrowmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR),
     base: [DIGIMON.SPARROWMON],
 };
 
 DIGIMON_DATA[DIGIMON.SPARROWMON_ULTIMATE] = {
     id: DIGIMON.SPARROWMON,
     names: {
-        japanese:"Sparrowmon",
-        english:"Sparrowmon",
-        game:"Sparrowmon",
+        japanese:"Sparrowmon (Ultimate)",
+        english:"Sparrowmon (Mega)",
+        game:"Sparrowmon (Mega)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 3),
     base: [DIGIMON.SPARROWMON],
 };
 //#endregion
@@ -9376,13 +9414,13 @@ DIGIMON_DATA[DIGIMON.STARMON] = {
         english:"Starmon",
         game:"Starmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.UK, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.STARMON],
 };
 
@@ -9402,30 +9440,30 @@ DIGIMON_DATA[DIGIMON.STARMONS] = {
         english:"Starmons",
         game:"Starmons",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.TBD],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.STARMONS],
 };
 
 DIGIMON_DATA[DIGIMON.STARMONS_ULTIMATE] = {
     id: DIGIMON.STARMONS,
     names: {
-        japanese:"Starmons",
-        english:"Starmons",
-        game:"Starmons",
+        japanese:"Starmons (Ultimate)",
+        english:"Starmons (Mega)",
+        game:"Starmons (Mega)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.UNKNOWN,
+    element: ATTRIBUTES.STEEL,
     stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.TBD],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.STARMONS],
 };
 //#endregion
@@ -9437,13 +9475,13 @@ DIGIMON_DATA[DIGIMON.SWIMMON] = {
         english:"Swimmon",
         game:"Swimmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SWIMMON],
 };
 
@@ -9454,13 +9492,13 @@ DIGIMON_DATA[DIGIMON.TYLOMON] = {
         english:"Tylomon",
         game:"Tylomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SWIMMON],
 };
 
@@ -9471,13 +9509,13 @@ DIGIMON_DATA[DIGIMON.WHAMON] = {
         english:"Whamon",
         game:"Whamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SWIMMON],
 };
 
@@ -9488,13 +9526,13 @@ DIGIMON_DATA[DIGIMON.NEPTUNEMON] = {
         english:"Neptunemon",
         game:"Neptunemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.SWIMMON],
 };
 //#endregion
@@ -9506,13 +9544,13 @@ DIGIMON_DATA[DIGIMON.SYAKOMON] = {
         english:"Syakomon",
         game:"Syakomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SYAKOMON],
 };
 
@@ -9523,13 +9561,13 @@ DIGIMON_DATA[DIGIMON.GESOMON] = {
         english:"Gesomon",
         game:"Gesomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SYAKOMON],
 };
 
@@ -9540,13 +9578,13 @@ DIGIMON_DATA[DIGIMON.MARINEDEVIMON] = {
         english:"MarineDevimon",
         game:"MarineDevimon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS, FAMILY.DA],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.SYAKOMON],
 };
 
@@ -9557,13 +9595,13 @@ DIGIMON_DATA[DIGIMON.LEVIAMON] = {
         english:"Leviamon",
         game:"Leviamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WATER,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.DS, FAMILY.DA, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.SYAKOMON],
 };
 //#endregion
@@ -9575,13 +9613,13 @@ DIGIMON_DATA[DIGIMON.TANEMON] = {
         english:"Tanemon",
         game:"Tanemon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.INTRAINING,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TANEMON],
 };
 
@@ -9592,13 +9630,13 @@ DIGIMON_DATA[DIGIMON.TANEMON_ADULT] = {
         english:"Tanemon (Champion)",
         game:"Tanemon (Champion)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
     stage: STAGE.TODO,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TANEMON],
 };
 
@@ -9609,13 +9647,13 @@ DIGIMON_DATA[DIGIMON.TANEMON_PERFECT] = {
         english:"Tanemon (Ultimate)",
         game:"Tanemon (Ultimate)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
     stage: STAGE.TODO,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TANEMON],
 };
 
@@ -9626,13 +9664,13 @@ DIGIMON_DATA[DIGIMON.TANEMON_ULTIMATE] = {
         english:"Tanemon (Mega)",
         game:"Tanemon (Mega)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
     stage: STAGE.TODO,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TANEMON],
 };
 //#endregion
@@ -9747,30 +9785,30 @@ DIGIMON_DATA[DIGIMON.TERRIERMON] = {
         english:"Terriermon",
         game:"Terriermon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.ROOKIE,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSP, FAMILY.VB, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TERRIERMON],
 };
 
-DIGIMON_DATA[DIGIMON.GALGOMON] = {
-    id: DIGIMON.GALGOMON,
+DIGIMON_DATA[DIGIMON.GARGOMON] = {
+    id: DIGIMON.GARGOMON,
     names: {
         japanese:"Gargomon",
         english:"Gargomon",
         game:"Gargomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.CHAMPION,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSP, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TERRIERMON],
 };
 
@@ -9781,63 +9819,63 @@ DIGIMON_DATA[DIGIMON.RAPIDMON] = {
         english:"Rapidmon",
         game:"Rapidmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.WG, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TERRIERMON],
 };
 
-DIGIMON_DATA[DIGIMON.SAINTGALGOMON] = {
-    id: DIGIMON.SAINTGALGOMON,
+DIGIMON_DATA[DIGIMON.SAINTGARGOMON] = {
+    id: DIGIMON.SAINTGARGOMON,
     names: {
         japanese:"SaintGargomon",
         english:"MegaGargomon",
-        game:"SaintGargomon",
+        game:"MegaGalgomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME, FAMILY.WG, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TERRIERMON],
 };
 
-DIGIMON_DATA[DIGIMON.BLACKSAINTGALGOMON] = {
-    id: DIGIMON.BLACKSAINTGALGOMON,
+DIGIMON_DATA[DIGIMON.BLACKSAINTGARGOMON] = {
+    id: DIGIMON.BLACKSAINTGARGOMON,
     names: {
         japanese:"BlackSaintGargomon",
         english:"BlackMegaGargomon",
-        game:"BlackSaintGargomon",
+        game:"BlackSaintGalgomon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.BURST_MODE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME, FAMILY.NSP],
+    ride_item: new UnlockInfo(RIDE_ITEMS.MODESELECTOR, 5),
     base: [DIGIMON.TERRIERMON],
 };
 
-DIGIMON_DATA[DIGIMON.SAINTGALGOMON_SHIN] = {
-    id: DIGIMON.SAINTGALGOMON_SHIN,
+DIGIMON_DATA[DIGIMON.SAINTGARGOMON_SHIN] = {
+    id: DIGIMON.SAINTGARGOMON_SHIN,
     names: {
         japanese:"SaintGargomon (Shin)",
         english:"MegaGargomon (Shin)",
         game:"SaintGargomon (Shin)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.VB, FAMILY.ME, FAMILY.NSP],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.TERRIERMON],
 };
@@ -9867,13 +9905,13 @@ DIGIMON_DATA[DIGIMON.TOYAGUMON_PERFECT] = {
         english:"ToyAgumon (Ultimate)",
         game:"ToyAgumon (Ultimate)",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.FIRE,
+    stage: STAGE.ULTIMATE,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TOYAGUMON],
 };
 //#endregion
@@ -9913,6 +9951,23 @@ DIGIMON_DATA[DIGIMON.PLATINUMSUKAMON] = {
     rank: RANK.SSS,
     family: [FAMILY.ME, FAMILY.NSO],
     ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
+    base: [DIGIMON.TOYAGUMON_SUKA],
+};
+
+DIGIMON_DATA[DIGIMON.KINGSUKAMON] = {
+    id: DIGIMON.KINGSUKAMON,
+    names: {
+        japanese:"KingSukamon",
+        english:"KingSukamon",
+        game:"KingSukamon",
+    },
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.CHAMPION,
+    class: CLASS.AA,
+    rank: RANK.SSS_PLUS,
+    family: [FAMILY.ME, FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.TOYAGUMON_SUKA],
 };
 //#endregion
@@ -10017,13 +10072,13 @@ DIGIMON_DATA[DIGIMON.WITCHMON] = {
         english:"Witchmon",
         game:"Witchmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WIND,
+    stage: STAGE.CHAMPION,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TSUKAIMON_BARBA],
 };
 
@@ -10037,12 +10092,12 @@ DIGIMON_DATA[DIGIMON.BARBAMON] = {
         english:"Barbamon",
         game:"Barbamon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
-    class: CLASS.TODO,
-    rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.MEGA,
+    class: CLASS.NONE,
+    rank: RANK.S_PLUS,
+    family: [FAMILY.NSO, FAMILY.DA],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.TSUKAIMON_BARBA],
 };
@@ -10055,11 +10110,11 @@ DIGIMON_DATA[DIGIMON.BARBAMONX] = {
         game:"Barbamon X",
     },
     type: ATTRIBUTES.VIRUS,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.BURST_MODEX,
     class: CLASS.TA,
     rank: RANK.SSS,
-    family: [FAMILY.TODO],
+    family: [FAMILY.NSO, FAMILY.DA],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.TSUKAIMON_BARBA],
 };
@@ -10082,13 +10137,13 @@ DIGIMON_DATA[DIGIMON.MURMUKUSMON] = {
         english:"Murmukusmon",
         game:"Murmukusmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
-    stage: STAGE.TODO,
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.DARK,
+    stage: STAGE.MEGA,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
-    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    family: [FAMILY.NSO],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.TSUKAIMON_MURMUKUS],
 };
 //#endregion
@@ -10329,10 +10384,10 @@ DIGIMON_DATA[DIGIMON.FLADRAMON] = {
     base: [DIGIMON.VEEMON_VEEDRA, DIGIMON.VEEMON_VENGEFUL],
 };
 
-DIGIMON_DATA[DIGIMON.GARGOMON] = {
-    id: DIGIMON.GARGOMON,
+DIGIMON_DATA[DIGIMON.GARGOYLEMON] = {
+    id: DIGIMON.GARGOYLEMON,
     names: {
-        japanese:"Gargomon",
+        japanese:"Gargoylemon",
         english:"Gargoylemon",
         game:"Gargomon",
     },
@@ -10413,7 +10468,7 @@ DIGIMON_DATA[DIGIMON.IMPERIALDRAMONPM_VENGEFUL] = {
 
 // In VEEMON_VEEDRA line
 // DIGIMON_DATA[DIGIMON.FLADRAMON] = {};
-// DIGIMON_DATA[DIGIMON.GARGOMON] = {};
+// DIGIMON_DATA[DIGIMON.GARGOYLEMON] = {};
 // DIGIMON_DATA[DIGIMON.MAGNAMON] = {};
 // DIGIMON_DATA[DIGIMON.MAGNAMONX] = {};
 
@@ -10744,12 +10799,12 @@ DIGIMON_DATA[DIGIMON.CHAOSMON] = {
         english:"Chaosmon",
         game:"Chaosmon",
     },
-    type: ATTRIBUTES.TODO,
-    element: ATTRIBUTES.TODO,
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.DARK,
     stage: STAGE.JOGRESS,
     class: CLASS.TODO,
     rank: RANK.TODO,
-    family: [FAMILY.TODO],
+    family: [FAMILY.UK, FAMILY.VB],
     ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
     base: [DIGIMON.COMMANDRAMON, DIGIMON.ELECMON],
 };
@@ -11388,66 +11443,66 @@ DIGIMON_DATA[DIGIMON.ZEKEGREYMON] = {
 const DIGIMON_EVOLUTIONS = {};
 //#region AGUMON
 DIGIMON_EVOLUTIONS[DIGIMON.AGUMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.GREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.AGUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.GREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.AGUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.METALGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.METALGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.WARGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.WARGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WARGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.VICTORYGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.VICTORYGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.VICTORYGREYMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.AGUMONX] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.GREYMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.GREYMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GREYMONX] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.METALGREYMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.METALGREYMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALGREYMONX] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.WARGREYMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.WARGREYMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WARGREYMONX] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region AGUMONB
 DIGIMON_EVOLUTIONS[DIGIMON.AGUMONB] = [
-    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.GREYMON_BLUE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.GREYMON_BLUE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.GREYMON_BLUE] = [
-    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.METALGREYMON_VIRUS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.METALGREYMON_VIRUS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.METALGREYMON_VIRUS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.METALGREYMON_VIRUS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.METALGREYMON_VIRUS] = [
-    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.BLACKWARGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.BLITZGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.BLACKWARGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.BLITZGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.BLACKWARGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.OMEGAMON_ZWART, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.OMEGAMON_ZWART, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region AGUMONB_BLITZ
 DIGIMON_EVOLUTIONS[DIGIMON.AGUMONB_BLITZ] = [
-    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.GREYMON_BLUE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.GREYMON_BLUE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 // In AGUMON_B line
 // DIGIMON_EVOLUTIONS[DIGIMON.GREYMON_BLUE] = [];
 // DIGIMON_EVOLUTIONS[DIGIMON.METALGREYMON_VIRUS] = [];
 DIGIMON_EVOLUTIONS[DIGIMON.BLITZGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.OMEGAMON_ALTERS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.OMEGAMON_ALTERS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region AGUMONB_MILLE
@@ -11457,12 +11512,12 @@ DIGIMON_EVOLUTIONS[DIGIMON.AGUMONB_MILLE] = [
 
 DIGIMON_EVOLUTIONS[DIGIMON.DARKTYRANNOMON] = [
     new EvolutionInfo(DIGIMON.AGUMONB_MILLE, DIGIMON.METALTYRANNOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.GIZAMON, DIGIMON.METALTYRANNOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GIZAMON, DIGIMON.METALTYRANNOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALTYRANNOMON] = [
     new EvolutionInfo(DIGIMON.AGUMONB_MILLE, DIGIMON.MUGENDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.GIZAMON, DIGIMON.MUGENDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GIZAMON, DIGIMON.MUGENDRAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MUGENDRAMON] = [
@@ -11473,24 +11528,24 @@ DIGIMON_EVOLUTIONS[DIGIMON.MUGENDRAMON] = [
 //#endregion
 //#region AGUMON_2006
 DIGIMON_EVOLUTIONS[DIGIMON.AGUMON_2006] = [
-    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.GEOGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.GEOGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GEOGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.RIZEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.RIZEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RIZEGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHINEGREYMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMONBM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMONBM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHINEGREYMONBM] = [
-    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMONRM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON_2006, DIGIMON.SHINEGREYMONRM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHINEGREYMONRM] = [];
@@ -11505,16 +11560,16 @@ DIGIMON_EVOLUTIONS[DIGIMON.ANGORAMON] = [
     new EvolutionInfo(DIGIMON.ANGORAMON, DIGIMON.SYMBAANGORAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.SYMBAANGORAMON] = [
-    new EvolutionInfo(DIGIMON.ANGORAMON, DIGIMON.LAMORTHMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ANGORAMON, DIGIMON.LAMORTHMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.LAMORTHMON] = [
-    new EvolutionInfo(DIGIMON.ANGORAMON, DIGIMON.DIRBITTMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ANGORAMON, DIGIMON.DIRBITTMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.DIRBITTMON] = [];
 //#endregion
 //#region APOCALYMON_PSY
 DIGIMON_EVOLUTIONS[DIGIMON.APOCALYMON_PSY] = [
-    new EvolutionInfo(DIGIMON.APOCALYMON_PSY, DIGIMON.APOCALYMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.APOCALYMON_PSY, DIGIMON.APOCALYMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region ARBORMON
@@ -11525,40 +11580,40 @@ DIGIMON_EVOLUTIONS[DIGIMON.ARKADIMON_CHILD] = [
     new EvolutionInfo(DIGIMON.ARKADIMON_CHILD, DIGIMON.ARKADIMON_ADULT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.ARKADIMON_ADULT] = [
-    new EvolutionInfo(DIGIMON.ARKADIMON_CHILD, DIGIMON.ARKADIMON_PERFECT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARKADIMON_CHILD, DIGIMON.ARKADIMON_PERFECT, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.ARKADIMON_PERFECT] = [
-    new EvolutionInfo(DIGIMON.ARKADIMON_CHILD, DIGIMON.ARKADIMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARKADIMON_CHILD, DIGIMON.ARKADIMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.ARKADIMON_ULTIMATE] = [];
 //#endregion
 //#region ARMADIMON
 DIGIMON_EVOLUTIONS[DIGIMON.ARMADIMON] = [
     new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.ANKYLOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.SUBMARIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.SUBMARIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ANKYLOMON] = [
-    new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.SHAKKOUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.SHAKKOUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.SHAKKOUMON_JOGRESS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.SHAKKOUMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
+    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.SHAKKOUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.SHAKKOUMON_JOGRESS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHAKKOUMON] = [
-    new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.VIKEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.VIKEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARMADIMON, DIGIMON.VIKEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
+    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.VIKEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.VIKEMON] = [
-    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.PLESIOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.PLESIOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SUBMARIMON] = [];
 //#endregion
 //#region ARMADIMON_SHAKKOU
 DIGIMON_EVOLUTIONS[DIGIMON.ARMADIMON_SHAKKOU] = [
-    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.ANKYLOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.DIGMON_ARMOR, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.ANKYLOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.DIGMON_ARMOR, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 // In ARMADIMON line
 // DIGIMON_EVOLUTIONS[DIGIMON.ANKYLOMON] = [];
@@ -11572,20 +11627,20 @@ DIGIMON_EVOLUTIONS[DIGIMON.ARMAGEMON_CONFLATION] = [];
 //#endregion
 //#region BAIHUMON
 DIGIMON_EVOLUTIONS[DIGIMON.BAIHUMON] = [
-    new EvolutionInfo(DIGIMON.BAIHUMON, DIGIMON.BAIHUMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BAIHUMON, DIGIMON.BAIHUMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BAIHUMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.BAIHUMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BAIHUMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region BALLISTAMON
 DIGIMON_EVOLUTIONS[DIGIMON.BALLISTAMON] = [
-    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.BALLISTAMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.BALLISTAMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BALLISTAMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX2, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX2, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region BEARMON
@@ -11594,22 +11649,22 @@ DIGIMON_EVOLUTIONS[DIGIMON.BEARMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GRIZZMON] = [
-    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.GRAPLEOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.GRAPLEOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GRAPLEOMON] = [
-    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.DINOTIGERMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.DUFTMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.DINOTIGERMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
+    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.DUFTMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DINOTIGERMON] = [
-    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.BANCHOLEOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.DINOTIGERMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.BANCHOLEOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.DINOTIGERMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BANCHOLEOMON] = [
-    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.MARSMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.CHAOSMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BEARMON, DIGIMON.MARSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.CHAOSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MARSMON] = [];
@@ -11618,32 +11673,32 @@ DIGIMON_EVOLUTIONS[DIGIMON.DINOTIGERMONX] = [];
 //#endregion
 //#region BETAMON
 DIGIMON_EVOLUTIONS[DIGIMON.BETAMON] = [
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.SEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.SEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SEADRAMON] = [
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.MEGASEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.BETAMON_APOCALY, DIGIMON.MEGASEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.MEGASEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.BETAMON_APOCALY, DIGIMON.MEGASEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MEGASEADRAMON] = [
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.METALSEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.BETAMON_APOCALY, DIGIMON.METALSEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.METALSEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.BETAMON_APOCALY, DIGIMON.METALSEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALSEADRAMON] = [
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.GIGASEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.GIGASEADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GIGASEADRAMON] = [
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.APOCALYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.GIGASEADRAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.APOCALYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.GIGASEADRAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.APOCALYMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GIGASEADRAMONX] = [
-    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.METALSEADRAMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BETAMON, DIGIMON.METALSEADRAMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALSEADRAMON_SHIN] = [];
@@ -11672,23 +11727,23 @@ DIGIMON_EVOLUTIONS[DIGIMON.CALMARAMON] = [];
 //#endregion
 //#region CANDLEMON
 DIGIMON_EVOLUTIONS[DIGIMON.CANDLEMON] = [
-    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.WIZARDMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.WIZARDMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WIZARDMON] = [
-    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.MYSTIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.MYSTIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MYSTIMON] = [
-    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.DYNASMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.DYNASMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DYNASMON] = [
-    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.DYNASMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.DYNASMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DYNASMONX] = [
-    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.DYNASMONX_FALLEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.CANDLEMON, DIGIMON.DYNASMONX_FALLEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DYNASMONX_FALLEN] = [];
@@ -11698,19 +11753,19 @@ DIGIMON_EVOLUTIONS[DIGIMON.CHAKMON] = [];
 //#endregion
 //#region COMMANDRAMON
 DIGIMON_EVOLUTIONS[DIGIMON.COMMANDRAMON] = [
-    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.SEALSDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.SEALSDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SEALSDRAMON] = [
-    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.TANKDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.TANKDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TANKDRAMON] = [
-    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.DARKDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.DARKDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DARKDRAMON] = [
-    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.CHAOSMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.COMMANDRAMON, DIGIMON.CHAOSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region DEMIMERAMON
@@ -11719,18 +11774,18 @@ DIGIMON_EVOLUTIONS[DIGIMON.DEMIMERAMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MERAMON] = [
-    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.DEATHMERAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.DEATHMERAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEATHMERAMON] = [
-    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.BOLTMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.GANKOOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.BOLTMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.GANKOOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BOLTMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GANKOOMON] = [
-    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.GANKOOMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DEMIMERAMON, DIGIMON.GANKOOMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GANKOOMONX] = [];
@@ -11741,8 +11796,8 @@ DIGIMON_EVOLUTIONS[DIGIMON.DOBERMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CERBERUMON] = [
-    new EvolutionInfo(DIGIMON.DOBERMON, DIGIMON.ANUBIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DOGGYMON, DIGIMON.ANUBIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DOBERMON, DIGIMON.ANUBIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
+    new EvolutionInfo(DIGIMON.DOGGYMON, DIGIMON.ANUBIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ANUBIMON] = [];
@@ -11762,109 +11817,109 @@ DIGIMON_EVOLUTIONS[DIGIMON.DOKUNEMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DOKUGUMON] = [
-    new EvolutionInfo(DIGIMON.DOKUNEMON, DIGIMON.ARUKENIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DOKUNEMON, DIGIMON.ARUKENIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ARUKENIMON] = [
-    new EvolutionInfo(DIGIMON.DOKUNEMON, DIGIMON.PARASIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DOKUNEMON, DIGIMON.PARASIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PARASIMON] = [];
 //#endregion
 //#region DORULUMON
 DIGIMON_EVOLUTIONS[DIGIMON.DORULUMON] = [
-    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.DORULUMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.DORULUMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORULUMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.SHOUTMONX3, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.SHOUTMONX3, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region DORUMON
 DIGIMON_EVOLUTIONS[DIGIMON.DORUMON] = [
     new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUGAMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGREMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGREMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUGREMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGORAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGORAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUGORAMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.RAPTORDRAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.RAPTORDRAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUGAMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGREMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGREMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUGREMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGORAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.DORUGORAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DORUGORAMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.GAIOUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON, DIGIMON.GAIOUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GAIOUMON] = [];
 //#endregion
 //#region DORUMON_ALPHA
 DIGIMON_EVOLUTIONS[DIGIMON.DORUMON_ALPHA] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.RAPTORDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.DORUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.RAPTORDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.DORUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAPTORDRAMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.GRADEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.GRADEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GRADEMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ALPHAMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In DORUMON line
 // DIGIMON_EVOLUTIONS[DIGIMON.DORUMONX] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAPTORDRAMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.GRADEMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.GRADEMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GRADEMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ALPHAMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region DORUMON_DEX
 DIGIMON_EVOLUTIONS[DIGIMON.DORUMON_DEX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DORUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DORUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXDORUGAMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGREMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGREMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXDORUGREMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGORAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGORAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXDORUGORAMON] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXMON] = [];
@@ -11873,19 +11928,19 @@ DIGIMON_EVOLUTIONS[DIGIMON.DEXMON] = [];
 // DIGIMON_EVOLUTIONS[DIGIMON.DORUMONX] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXDORUGAMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGREMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGREMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXDORUGREMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGORAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXDORUGORAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXDORUGORAMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXMONX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXMONX_AWAKEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_DEX, DIGIMON.DEXMONX_AWAKEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DEXMONX_AWAKEN] = [];
@@ -11893,29 +11948,29 @@ DIGIMON_EVOLUTIONS[DIGIMON.DEXMONX_AWAKEN] = [];
 //#region DRACMON
 DIGIMON_EVOLUTIONS[DIGIMON.DRACMON] = [
     new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.SANGLOUPMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.DRACMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.DRACMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SANGLOUPMON] = [
-    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.MATADORMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.MATADORMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MATADORMON] = [
-    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.GRANDRACMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.GRANDRACMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GRANDRACMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DRACMONX] = [
-    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.SANGLOUPMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.SANGLOUPMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SANGLOUPMONX] = [
-    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.MATADORMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.MATADORMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MATADORMONX] = [
-    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.GRANDRACMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACMON, DIGIMON.GRANDRACMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GRANDRACMONX] = [];
@@ -11926,54 +11981,55 @@ DIGIMON_EVOLUTIONS[DIGIMON.DRACOMON_BLUE] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.COREDRAMON_BLUE] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.WINGDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.WINGDRAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WINGDRAMON] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.SLAYERDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.SLAYERDRAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SLAYERDRAMON] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.EXAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.EXAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region DRACOMON_GREEN
 DIGIMON_EVOLUTIONS[DIGIMON.DRACOMON_GREEN] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.COREDRAMON_GREEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.COREDRAMON_GREEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.COREDRAMON_GREEN] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.GROUNDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.GROUNDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GROUNDRAMON] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.BREAKDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.BREAKDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BREAKDRAMON] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.EXAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.EXAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region DRIMOGEMON
 DIGIMON_EVOLUTIONS[DIGIMON.DRIMOGEMON] = [
     new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.DIGMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.GIROMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
-DIGIMON_EVOLUTIONS[DIGIMON.DIGMON] = [];
+DIGIMON_EVOLUTIONS[DIGIMON.DIGMON] = [
+    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.GIROMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
+];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GIROMON] = [
-    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.HIANDROMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.HIANDROMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HIANDROMON] = [
-    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.CRANIUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.HAGURUMON_GUARDRO, DIGIMON.CRANIUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.CRANIUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.HAGURUMON_GUARDRO, DIGIMON.CRANIUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CRANIUMON] = [
-    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.CRANIUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.HAGURUMON_GUARDRO, DIGIMON.CRANIUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRIMOGEMON, DIGIMON.CRANIUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.HAGURUMON_GUARDRO, DIGIMON.CRANIUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CRANIUMONX] = [];
@@ -11984,16 +12040,16 @@ DIGIMON_EVOLUTIONS[DIGIMON.ELECMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.LEOMON] = [
-    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.PANJYAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.GRAPLEOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.PANJYAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
+    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.GRAPLEOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PANJYAMON] = [
-    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.SABERLEOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.SABERLEOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SABERLEOMON] = [
-    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.BANCHOLEOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ELECMON, DIGIMON.BANCHOLEOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In BEARMON line
@@ -12002,7 +12058,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.SABERLEOMON] = [
 //#endregion
 //#region ELECMON_DUFT
 DIGIMON_EVOLUTIONS[DIGIMON.ELECMON_DUFT] = [
-    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.LEOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.LEOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In ELECMON line
@@ -12012,11 +12068,11 @@ DIGIMON_EVOLUTIONS[DIGIMON.ELECMON_DUFT] = [
 // DIGIMON_EVOLUTIONS[DIGIMON.GRAPLEOMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DUFTMON] = [
-    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.DUFTMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.DUFTMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DUFTMONX] = [
-    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.DUFTMONX_FALLEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ELECMON_DUFT, DIGIMON.DUFTMONX_FALLEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.DUFTMONX_FALLEN] = [];
@@ -12026,24 +12082,24 @@ DIGIMON_EVOLUTIONS[DIGIMON.FAIRIMON] = [];
 //#endregion
 //#region FALCOMON
 DIGIMON_EVOLUTIONS[DIGIMON.FALCOMON] = [
-    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.PECKMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.PECKMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PECKMON] = [
-    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.YATAGARAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.YATAGARAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.YATAGARAMON] = [
-    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAVEMON] = [
-    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMONBM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMONBM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAVEMONBM] = [
-    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMONRM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FALCOMON, DIGIMON.RAVEMONRM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAVEMONRM] = [];
@@ -12052,46 +12108,46 @@ DIGIMON_EVOLUTIONS[DIGIMON.RAVEMON_MUTANT] = [];
 //#endregion
 //#region FANBEEMON
 DIGIMON_EVOLUTIONS[DIGIMON.FANBEEMON] = [
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.WASPMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.FANBEEMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.WASPMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.FANBEEMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WASPMON] = [
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.CANNONBEEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.CANNONBEEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CANNONBEEMON] = [
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.TIGERVESPAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.TIGERVESPAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TIGERVESPAMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.FANBEEMONX] = [
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.WASPMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.WASPMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WASPMONX] = [
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.CANNONBEEMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.CANNONBEEMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CANNONBEEMONX] = [
-    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.TIGERVESPAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.FANBEEMON, DIGIMON.TIGERVESPAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TIGERVESPAMONX] = [];
 //#endregion
 //#region FLORAMON
 DIGIMON_EVOLUTIONS[DIGIMON.FLORAMON] = [
-    new EvolutionInfo(DIGIMON.FLORAMON, DIGIMON.VEGIEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.FLORAMON, DIGIMON.VEGIEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.VEGIEMON] = [
-    new EvolutionInfo(DIGIMON.FLORAMON, DIGIMON.BLOSSOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.FLORAMON, DIGIMON.BLOSSOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BLOSSOMON] = [
-    new EvolutionInfo(DIGIMON.FLORAMON, DIGIMON.LOTUSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.KIWIMON, DIGIMON.GRYPHONMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.FLORAMON, DIGIMON.LOTUSMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
+    new EvolutionInfo(DIGIMON.KIWIMON, DIGIMON.GRYPHONMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.LOTUSMON] = [
@@ -12100,103 +12156,103 @@ DIGIMON_EVOLUTIONS[DIGIMON.LOTUSMON] = [
 //#endregion
 //#region GABUMON
 DIGIMON_EVOLUTIONS[DIGIMON.GABUMON] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.GARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.GABUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.GARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.GABUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GARURUMON] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.WEREGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.WEREGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.WEREGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.WEREGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WEREGARURUMON] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.METALGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.CRESGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.METALGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.CRESGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALGARURUMON] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.ZDGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.ZDGARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ZDGARURUMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GABUMONX] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.GARURUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.GARURUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GARURUMONX] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.WEREGARURUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.WEREGARURUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WEREGARURUMONX] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.METALGARURUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.METALGARURUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALGARURUMONX] = [
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region GABUMONB
 DIGIMON_EVOLUTIONS[DIGIMON.GABUMONB] = [
-    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.GARURUMONB, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.GARURUMONB, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.GARURUMONB] = [
-    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.WEREGARURUMONB, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.WEREGARURUMONB, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.WEREGARURUMONB] = [
-    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.METALGARURUMONB, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.METALGARURUMONB, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.METALGARURUMONB] = [
-    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.OMEGAMON_ZWART, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.OMEGAMON_ZWART, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region GABUMON_CRES
 DIGIMON_EVOLUTIONS[DIGIMON.GABUMON_CRES] = [
-    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.GARURUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.GARURUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 // In GABUMON line
 // DIGIMON_EVOLUTIONS[DIGIMON.GARURUMON] = [];
 // DIGIMON_EVOLUTIONS[DIGIMON.WEREGARURUMON] = [];
 DIGIMON_EVOLUTIONS[DIGIMON.CRESGARURUMON] = [
-    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.OMEGAMON_ALTERS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.OMEGAMON_ALTERS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region GAMMAMON
 DIGIMON_EVOLUTIONS[DIGIMON.GAMMAMON] = [
-    new EvolutionInfo(DIGIMON.GAMMAMON, DIGIMON.BETELGAMMAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAMMAMON, DIGIMON.BETELGAMMAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BETELGAMMAMON] = [
-    new EvolutionInfo(DIGIMON.GAMMAMON, DIGIMON.CANOWEISSMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAMMAMON, DIGIMON.CANOWEISSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CANOWEISSMON] = [
-    new EvolutionInfo(DIGIMON.GAMMAMON, DIGIMON.SIRIUSMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAMMAMON, DIGIMON.SIRIUSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SIRIUSMON] = [];
 //#endregion
 //#region GAOMON
 DIGIMON_EVOLUTIONS[DIGIMON.GAOMON] = [
-    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.GAOGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.GAOGAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GAOGAMON] = [
-    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MACHGAOGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MACHGAOGAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MACHGAOGAMON] = [
-    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MIRAGEGAOGAMON] = [
-    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMONBM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMONBM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MIRAGEGAOGAMONBM] = [
-    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMONRM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAOMON, DIGIMON.MIRAGEGAOGAMONRM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MIRAGEGAOGAMONRM] = [];
@@ -12211,10 +12267,10 @@ DIGIMON_EVOLUTIONS[DIGIMON.GAZIMON] = [
     new EvolutionInfo(DIGIMON.GAZIMON, DIGIMON.DEVIDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.DEVIDRAMON] = [
-    new EvolutionInfo(DIGIMON.GAZIMON, DIGIMON.MEPHISMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAZIMON, DIGIMON.MEPHISMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.MEPHISMON] = [
-    new EvolutionInfo(DIGIMON.GAZIMON, DIGIMON.GULFMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GAZIMON, DIGIMON.GULFMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 DIGIMON_EVOLUTIONS[DIGIMON.GULFMON] = [];
 //#endregion
@@ -12243,7 +12299,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.GIZAMON] = [
 //#endregion
 //#region GIZUMON_AT
 DIGIMON_EVOLUTIONS[DIGIMON.GIZUMONAT] = [
-    new EvolutionInfo(DIGIMON.GIZUMONAT, DIGIMON.GIZUMONXT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GIZUMONAT, DIGIMON.GIZUMONXT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GIZUMONXT] = [];
@@ -12254,11 +12310,11 @@ DIGIMON_EVOLUTIONS[DIGIMON.GOBLIMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OGREMON] = [
-    new EvolutionInfo(DIGIMON.GOBLIMON, DIGIMON.ETEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GOBLIMON, DIGIMON.ETEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ETEMON] = [
-    new EvolutionInfo(DIGIMON.GOBLIMON, DIGIMON.METALETEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GOBLIMON, DIGIMON.METALETEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALETEMON] = [
@@ -12275,26 +12331,26 @@ DIGIMON_EVOLUTIONS[DIGIMON.KINGETEMONBG] = [];
 //#endregion
 //#region GOMAMON
 DIGIMON_EVOLUTIONS[DIGIMON.GOMAMON] = [
-    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.IKKAKUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.IKKAKUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.IKKAKUMON] = [
-    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.ZUDOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.ZUDOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ZUDOMON] = [
-    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.VIKEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.VIKEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In ARMADIMON line
 // DIGIMON_EVOLUTIONS[DIGIMON.VIKEMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PLESIOMON] = [
-    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.AEGISDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.AEGISDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.AEGISDRAMON] = [
-    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.RUSTTYRANNOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GOMAMON, DIGIMON.RUSTTYRANNOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region GOMAMON_JIJI
@@ -12332,11 +12388,11 @@ DIGIMON_EVOLUTIONS[DIGIMON.INSEKIMON] = [
 //#endregion
 //#region GREYMON_XROS
 DIGIMON_EVOLUTIONS[DIGIMON.GREYMON_XROS] = [
-    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.GREYMON_XROS_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.GREYMON_XROS_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GREYMON_XROS_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.METALGREYMON_XROS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.METALGREYMON_XROS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region GROTMON
@@ -12441,16 +12497,16 @@ DIGIMON_EVOLUTIONS[DIGIMON.JESMONX] = [];
 //#endregion
 //#region HAGURUMON
 DIGIMON_EVOLUTIONS[DIGIMON.HAGURUMON] = [
-    new EvolutionInfo(DIGIMON.HAGURUMON, DIGIMON.MECHANORIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.HAGURUMON, DIGIMON.MECHANORIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MECHANORIMON] = [
-    new EvolutionInfo(DIGIMON.HAGURUMON, DIGIMON.MEGADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.HAGURUMON, DIGIMON.MEGADRAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
     new EvolutionInfo(DIGIMON.HAGURUMON_APOCALY, DIGIMON.MEGADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MEGADRAMON] = [
-    new EvolutionInfo(DIGIMON.HAGURUMON, DIGIMON.MUGENDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.HAGURUMON, DIGIMON.MUGENDRAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
     new EvolutionInfo(DIGIMON.HAGURUMON_APOCALY, DIGIMON.MUGENDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
@@ -12558,7 +12614,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.ICEDEVIMON] = [
 
 DIGIMON_EVOLUTIONS[DIGIMON.SKULLSATAMON] = [
     new EvolutionInfo(DIGIMON.IMPMON, DIGIMON.BEELZEBUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.TSUKAIMON_MURMUKUS, DIGIMON.MURMUKUSMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TSUKAIMON_MURMUKUS, DIGIMON.MURMUKUSMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BEELZEBUMON] = [
@@ -12591,7 +12647,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.AMPHIMON] = [];
 //#endregion
 //#region KAISERGREYMON
 DIGIMON_EVOLUTIONS[DIGIMON.KAISERGREYMON] = [
-    new EvolutionInfo(DIGIMON.KAISERGREYMON, DIGIMON.SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.KAISERGREYMON, DIGIMON.SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region KAISERLEOMON
@@ -12599,15 +12655,15 @@ DIGIMON_EVOLUTIONS[DIGIMON.KAISERLEOMON] = [];
 //#endregion
 //#region KAMEMON
 DIGIMON_EVOLUTIONS[DIGIMON.KAMEMON] = [
-    new EvolutionInfo(DIGIMON.KAMEMON, DIGIMON.GAWAPPAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KAMEMON, DIGIMON.GAWAPPAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GAWAPPAMON] = [
-    new EvolutionInfo(DIGIMON.KAMEMON, DIGIMON.SHAWUJINMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KAMEMON, DIGIMON.SHAWUJINMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHAWUJINMON] = [
-    new EvolutionInfo(DIGIMON.KAMEMON, DIGIMON.JUMBOGAMEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KAMEMON, DIGIMON.JUMBOGAMEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.JUMBOGAMEMON] = [];
@@ -12634,8 +12690,8 @@ DIGIMON_EVOLUTIONS[DIGIMON.ARMAGEMON] = [];
 //#region KIWIMON
 // TODO: Double check this is the correct evolution path
 DIGIMON_EVOLUTIONS[DIGIMON.KIWIMON] = [
-    new EvolutionInfo(DIGIMON.KIWIMON, DIGIMON.BLOSSOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.KIWIMON, DIGIMON.SINDURAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KIWIMON, DIGIMON.BLOSSOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
+    new EvolutionInfo(DIGIMON.KIWIMON, DIGIMON.SINDURAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 // In FLORAMON line
@@ -12647,15 +12703,15 @@ DIGIMON_EVOLUTIONS[DIGIMON.SINDURAMON] = [];
 //#endregion
 //#region KOKUWAMON
 DIGIMON_EVOLUTIONS[DIGIMON.KOKUWAMON] = [
-    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.THUNDERMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.THUNDERMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.THUNDERMON] = [
-    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.MAMEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.MAMEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MAMEMON] = [
-    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.BIGMAMEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.BIGMAMEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BIGMAMEMON] = [
@@ -12749,25 +12805,25 @@ DIGIMON_EVOLUTIONS[DIGIMON.GRANKUWAGAMON] = [];
 //#endregion
 //#region LALAMON
 DIGIMON_EVOLUTIONS[DIGIMON.LALAMON] = [
-    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.SUNFLOWMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.SUNFLOWMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SUNFLOWMON] = [
-    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.LILAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.LILAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.LILAMON] = [
-    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ROSEMON] = [
-    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMONBM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.RAFFLESIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMONBM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMON_MUTANT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.RAFFLESIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ROSEMONBM] = [
-    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMONRM, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LALAMON, DIGIMON.ROSEMONRM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ROSEMONRM] = [];
@@ -12776,22 +12832,22 @@ DIGIMON_EVOLUTIONS[DIGIMON.ROSEMON_MUTANT] = [];
 //#endregion
 //#region LOPMON
 DIGIMON_EVOLUTIONS[DIGIMON.LOPMON] = [
-    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.WENDIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.TURUIEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.WENDIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.TURUIEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WENDIMON] = [
-    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.ANTYLAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.ANTYLAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ANTYLAMON] = [
-    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.CHERUBIMON_AKU, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.CHERUBIMON_AKU, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CHERUBIMON_AKU] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TURUIEMON] = [
-    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.ANTYLAMON_DEVA, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.LOPMON, DIGIMON.ANTYLAMON_DEVA, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ANTYLAMON_DEVA] = [
@@ -12810,6 +12866,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.LOWEMON] = [];
 //#region LUCEMON
 DIGIMON_EVOLUTIONS[DIGIMON.LUCEMON] = [
     new EvolutionInfo(DIGIMON.LUCEMON, DIGIMON.LUCEMONFM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.LUCEMON, DIGIMON.LUCEMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.LUCEMONFM] = [
@@ -12820,24 +12877,26 @@ DIGIMON_EVOLUTIONS[DIGIMON.LUCEMONFM] = [
 DIGIMON_EVOLUTIONS[DIGIMON.LUCEMONSM] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.LUCEMON_LARVA] = [];
+
+DIGIMON_EVOLUTIONS[DIGIMON.LUCEMONX] = [];
 //#endregion
 //#region LUNAR_KAISERGREYMON
 DIGIMON_EVOLUTIONS[DIGIMON.LUNAR_KAISERGREYMON] = [
-    new EvolutionInfo(DIGIMON.LUNAR_KAISERGREYMON, DIGIMON.COSMIC_SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.LUNAR_KAISERGREYMON, DIGIMON.COSMIC_SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region MAGNAGARURUMON
 DIGIMON_EVOLUTIONS[DIGIMON.MAGNAGARURUMON] = [
-    new EvolutionInfo(DIGIMON.MAGNAGARURUMON, DIGIMON.SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.MAGNAGARURUMON, DIGIMON.SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region MAILBIDRAMON
 DIGIMON_EVOLUTIONS[DIGIMON.MAILBIRDRAMON] = [
-    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.MAILBIRDAMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.MAILBIRDAMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MAILBIRDAMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.METALGREYMON_XROS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.METALGREYMON_XROS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region MEICOOMON
@@ -12858,15 +12917,15 @@ DIGIMON_EVOLUTIONS[DIGIMON.MERCUREMON] = [];
 //#endregion
 //#region MONODRAMON
 DIGIMON_EVOLUTIONS[DIGIMON.MONODRAMON] = [
-    new EvolutionInfo(DIGIMON.MONODRAMON, DIGIMON.STRIKEDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.MONODRAMON, DIGIMON.STRIKEDRAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.STRIKEDRAMON] = [
-    new EvolutionInfo(DIGIMON.MONODRAMON, DIGIMON.CYBERDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.MONODRAMON, DIGIMON.CYBERDRAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CYBERDRAMON] = [
-    new EvolutionInfo(DIGIMON.MONODRAMON, DIGIMON.JUSTIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.MONODRAMON, DIGIMON.JUSTIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.JUSTIMON] = [
@@ -12916,15 +12975,15 @@ DIGIMON_EVOLUTIONS[DIGIMON.OROCHIMON] = [];
 //#endregion
 //#region OTAMAMON
 DIGIMON_EVOLUTIONS[DIGIMON.OTAMAMON] = [
-    new EvolutionInfo(DIGIMON.OTAMAMON, DIGIMON.GEKOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.OTAMAMON, DIGIMON.GEKOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GEKOMON] = [
-    new EvolutionInfo(DIGIMON.OTAMAMON, DIGIMON.TONOSAMAGEKOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.OTAMAMON, DIGIMON.TONOSAMAGEKOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TONOSAMAGEKOMON] = [
-    new EvolutionInfo(DIGIMON.OTAMAMON, DIGIMON.PUKUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.OTAMAMON, DIGIMON.PUKUMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PUKUMON] = [];
@@ -12942,6 +13001,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.TOGEMON] = [
 DIGIMON_EVOLUTIONS[DIGIMON.LILYMON] = [
     new EvolutionInfo(DIGIMON.PALMON, DIGIMON.MARINEANGEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
     new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.ROSEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
+    new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.BLOOMLORDMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MARINEANGEMON] = [];
@@ -12966,7 +13026,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.PINOCCHIMON] = [
 //#region PALMON_ORIGINAL
 DIGIMON_EVOLUTIONS[DIGIMON.PALMON_ORIGINAL] = [
     new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.TOGEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.PALMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PALMON_ORIGINAL, DIGIMON.PALMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In PALMON line
@@ -12989,6 +13049,8 @@ DIGIMON_EVOLUTIONS[DIGIMON.LILYMONX] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ROSEMONX] = [];
+
+DIGIMON_EVOLUTIONS[DIGIMON.BLOOMLORDMON] = [];
 //#endregion
 //#region PALMON_WOOD
 DIGIMON_EVOLUTIONS[DIGIMON.PALMON_WOOD] = [
@@ -13011,29 +13073,29 @@ DIGIMON_EVOLUTIONS[DIGIMON.ANCIENTTROIAMON] = [
 //#endregion
 //#region PATAMON
 DIGIMON_EVOLUTIONS[DIGIMON.PATAMON] = [
-    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.ANGEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.PEGASMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.ANGEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.PEGASMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ANGEMON] = [
-    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.HOLYANGEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.HOLYANGEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SHAKKOUMON_JOGRESS, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.HOLYANGEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.HOLYANGEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SHAKKOUMON_JOGRESS, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HOLYANGEMON] = [
-    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.SERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.SERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SERAPHIMON] = [
-    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.SHADOWSERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SHADOWSERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.SHADOWSERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SHADOWSERAPHIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHADOWSERAPHIMON] = [
-    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.SHADOWSERAPHIMONBG, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SHADOWSERAPHIMONBG, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PATAMON, DIGIMON.SHADOWSERAPHIMONBG, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SHADOWSERAPHIMONBG, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHADOWSERAPHIMONBG] = [];
@@ -13086,51 +13148,51 @@ DIGIMON_EVOLUTIONS[DIGIMON.PICODEVIMON] = [
 DIGIMON_EVOLUTIONS[DIGIMON.DEVIMON] = [
     new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.VAMDEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.TSUKAIMON, DIGIMON.NEODEVIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.TSUKAIMON_MURMUKUS, DIGIMON.SKULLSATAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TSUKAIMON_MURMUKUS, DIGIMON.SKULLSATAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.VAMDEMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.VENOMVAMDEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.BOLTBOUTAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.VENOMVAMDEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.BOLTBOUTAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.VENOMVAMDEMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.BELIALVAMDEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON, DIGIMON.BELIALVAMDEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BELIALVAMDEMON] = [];
 //#endregion
 //#region PICODEVIMON_APOCALY
 DIGIMON_EVOLUTIONS[DIGIMON.PICODEVIMON_APOCALY] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_APOCALY, DIGIMON.SOULMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_APOCALY, DIGIMON.SOULMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SOULMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_APOCALY, DIGIMON.PHANTOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.PHANTOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_APOCALY, DIGIMON.PHANTOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.PHANTOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PHANTOMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_APOCALY, DIGIMON.PIEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.PIEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_APOCALY, DIGIMON.PIEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.PIEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PIEMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.CHAOSPIEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.BOLTBOUTAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.CHAOSPIEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.BOLTBOUTAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region PICODEVIMON_BAKE
 DIGIMON_EVOLUTIONS[DIGIMON.PICODEVIMON_BAKE] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_BAKE, DIGIMON.BAKEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_BAKE, DIGIMON.BAKEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.BAKEMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_BAKE, DIGIMON.PUMPMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_BAKE, DIGIMON.PUMPMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PUMPMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_BAKE, DIGIMON.BOLTMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_BAKE, DIGIMON.BOLTMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In DemiMeramon line
@@ -13138,7 +13200,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.PUMPMON] = [
 //#endregion
 //#region PICODEVIMON_SOUL
 DIGIMON_EVOLUTIONS[DIGIMON.PICODEVIMON_SOUL] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.SOULMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.SOULMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 // In PICODEVIMON_APOCALY line
@@ -13156,7 +13218,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.PICODEVIMON_SOUL] = [
 // ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.CHAOSPIEMON] = [
-    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.APOCALYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.PICODEVIMON_SOUL, DIGIMON.APOCALYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region PIYOMON
@@ -13286,11 +13348,11 @@ DIGIMON_EVOLUTIONS[DIGIMON.BELPHEMONRM] = [];
 //#endregion
 //#region QINGLONGMON
 DIGIMON_EVOLUTIONS[DIGIMON.QINGLONGMON] = [
-    new EvolutionInfo(DIGIMON.QINGLONGMON, DIGIMON.QINGLONGMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.QINGLONGMON, DIGIMON.QINGLONGMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.QINGLONGMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.QINGLONGMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.QINGLONGMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region RANAMON
@@ -13298,7 +13360,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.RANAMON] = [];
 //#endregion
 //#region RAREMON
 DIGIMON_EVOLUTIONS[DIGIMON.RAREMON] = [
-    new EvolutionInfo(DIGIMON.RAREMON, DIGIMON.RAREMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.RAREMON, DIGIMON.RAREMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAREMON_ULTIMATE] = [];
@@ -13332,12 +13394,12 @@ DIGIMON_EVOLUTIONS[DIGIMON.SAKUYAMON_SHIN] = [];
 //#endregion
 //#region REVOLMON
 DIGIMON_EVOLUTIONS[DIGIMON.REVOLMON] = [
-    new EvolutionInfo(DIGIMON.REVOLMON, DIGIMON.SUPERSTARMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.REVOLMON, DIGIMON.SUPERSTARMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SUPERSTARMON] = [
-    new EvolutionInfo(DIGIMON.REVOLMON, DIGIMON.JUSTIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.STARMON, DIGIMON.JUSTIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.REVOLMON, DIGIMON.JUSTIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
+    new EvolutionInfo(DIGIMON.STARMON, DIGIMON.JUSTIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 // In MONODRAMON line
@@ -13347,36 +13409,36 @@ DIGIMON_EVOLUTIONS[DIGIMON.SUPERSTARMON] = [
 //#endregion
 //#region RYUDAMON
 DIGIMON_EVOLUTIONS[DIGIMON.RYUDAMON] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.GINRYUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.RYUDAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.GINRYUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.RYUDAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GINRYUMON] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.HISYARYUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.HISYARYUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HISYARYUMON] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.OURYUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.OURYUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OURYUMON] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RYUDAMONX] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.GINRYUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.GINRYUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GINRYUMONX] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.HISYARYUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.HISYARYUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HISYARYUMONX] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.OURYUMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.OURYUMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OURYUMONX] = [
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region SEPHIROTMON
@@ -13384,31 +13446,31 @@ DIGIMON_EVOLUTIONS[DIGIMON.SEPHIROTMON] = [];
 //#endregion
 //#region SHAMAMON
 DIGIMON_EVOLUTIONS[DIGIMON.SHAMAMON] = [
-    new EvolutionInfo(DIGIMON.SHAMAMON, DIGIMON.HANUMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHAMAMON, DIGIMON.HANUMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HANUMON] = [
-    new EvolutionInfo(DIGIMON.SHAMAMON, DIGIMON.MAMMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHAMAMON, DIGIMON.MAMMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MAMMON] = [
-    new EvolutionInfo(DIGIMON.SHAMAMON, DIGIMON.SKULLMAMMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHAMAMON, DIGIMON.SKULLMAMMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SKULLMAMMON] = [];
 //#endregion
 //#region SHOUTMON
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMON] = [
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX2, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.OMEGASHOUTMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX2, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.OMEGASHOUTMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGASHOUTMON] = [
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONDX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONDX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region SHUTSMON
@@ -13416,22 +13478,22 @@ DIGIMON_EVOLUTIONS[DIGIMON.SHUTSMON] = [];
 //#endregion
 //#region SOLAR_MAGNAGARURUMON
 DIGIMON_EVOLUTIONS[DIGIMON.SOLAR_MAGNAGARURUMON] = [
-    new EvolutionInfo(DIGIMON.SOLAR_MAGNAGARURUMON, DIGIMON.COSMIC_SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.SOLAR_MAGNAGARURUMON, DIGIMON.COSMIC_SUSANOOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region SPARROWMON
 DIGIMON_EVOLUTIONS[DIGIMON.SPARROWMON] = [
-    new EvolutionInfo(DIGIMON.SPARROWMON, DIGIMON.SPARROWMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.SPARROWMON, DIGIMON.SPARROWMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SPARROWMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.SPARROWMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.SPARROWMON, DIGIMON.JETMERVAMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.SPARROWMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SPARROWMON, DIGIMON.JETMERVAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region STARMON
 DIGIMON_EVOLUTIONS[DIGIMON.STARMON] = [
-    new EvolutionInfo(DIGIMON.STARMON, DIGIMON.SUPERSTARMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.STARMON, DIGIMON.SUPERSTARMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 // In REVOLMON line
@@ -13444,54 +13506,54 @@ DIGIMON_EVOLUTIONS[DIGIMON.STARMON] = [
 //#endregion
 //#region STARMONS
 DIGIMON_EVOLUTIONS[DIGIMON.STARMONS] = [
-    new EvolutionInfo(DIGIMON.STARMONS, DIGIMON.STARMONS_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.STARMONS, DIGIMON.STARMONS_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.STARMONS_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.STARMONS, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.STARMONS, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region SWIMMON
 DIGIMON_EVOLUTIONS[DIGIMON.SWIMMON] = [
-    new EvolutionInfo(DIGIMON.SWIMMON, DIGIMON.TYLOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SWIMMON, DIGIMON.TYLOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TYLOMON] = [
-    new EvolutionInfo(DIGIMON.SWIMMON, DIGIMON.WHAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SWIMMON, DIGIMON.WHAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.WHAMON] = [
-    new EvolutionInfo(DIGIMON.SWIMMON, DIGIMON.NEPTUNEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SWIMMON, DIGIMON.NEPTUNEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.NEPTUNEMON] = [];
 //#endregion
 //#region SYAKOMON
 DIGIMON_EVOLUTIONS[DIGIMON.SYAKOMON] = [
-    new EvolutionInfo(DIGIMON.SYAKOMON, DIGIMON.GESOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SYAKOMON, DIGIMON.GESOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.GESOMON] = [
-    new EvolutionInfo(DIGIMON.SYAKOMON, DIGIMON.MARINEDEVIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SYAKOMON, DIGIMON.MARINEDEVIMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MARINEDEVIMON] = [
-    new EvolutionInfo(DIGIMON.SYAKOMON, DIGIMON.LEVIAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SYAKOMON, DIGIMON.LEVIAMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 8)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.LEVIAMON] = [];
 //#endregion
 //#region TANEMON
 DIGIMON_EVOLUTIONS[DIGIMON.TANEMON] = [
-    new EvolutionInfo(DIGIMON.TANEMON, DIGIMON.TANEMON_ADULT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TANEMON, DIGIMON.TANEMON_ADULT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TANEMON_ADULT] = [
-    new EvolutionInfo(DIGIMON.TANEMON, DIGIMON.TANEMON_PERFECT, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TANEMON, DIGIMON.TANEMON_PERFECT, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TANEMON_PERFECT] = [
-    new EvolutionInfo(DIGIMON.TANEMON, DIGIMON.TANEMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TANEMON, DIGIMON.TANEMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.TANEMON_ULTIMATE] = [];
@@ -13521,25 +13583,25 @@ DIGIMON_EVOLUTIONS[DIGIMON.TYRANTKABUTERIMONBG] = [];
 //#endregion
 //#region TERRIERMON
 DIGIMON_EVOLUTIONS[DIGIMON.TERRIERMON] = [
-    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.GALGOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.GARGOMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
-DIGIMON_EVOLUTIONS[DIGIMON.GALGOMON] = [
-    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.RAPIDMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+DIGIMON_EVOLUTIONS[DIGIMON.GARGOMON] = [
+    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.RAPIDMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 3)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.RAPIDMON] = [
-    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.SAINTGALGOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.SAINTGARGOMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 6)),
 ];
 
-DIGIMON_EVOLUTIONS[DIGIMON.SAINTGALGOMON] = [
-    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.BLACKSAINTGALGOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.SAINTGALGOMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+DIGIMON_EVOLUTIONS[DIGIMON.SAINTGARGOMON] = [
+    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.BLACKSAINTGARGOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TERRIERMON, DIGIMON.SAINTGARGOMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
-DIGIMON_EVOLUTIONS[DIGIMON.BLACKSAINTGALGOMON] = [];
+DIGIMON_EVOLUTIONS[DIGIMON.BLACKSAINTGARGOMON] = [];
 
-DIGIMON_EVOLUTIONS[DIGIMON.SAINTGALGOMON_SHIN] = [];
+DIGIMON_EVOLUTIONS[DIGIMON.SAINTGARGOMON_SHIN] = [];
 //#endregion
 //#region TOYAGUMON
 DIGIMON_EVOLUTIONS[DIGIMON.TOYAGUMON] = [
@@ -13557,7 +13619,11 @@ DIGIMON_EVOLUTIONS[DIGIMON.SUKAMON] = [
     new EvolutionInfo(DIGIMON.TOYAGUMON_SUKA, DIGIMON.PLATINUMSUKAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
-DIGIMON_EVOLUTIONS[DIGIMON.PLATINUMSUKAMON] = [];
+DIGIMON_EVOLUTIONS[DIGIMON.PLATINUMSUKAMON] = [
+    new EvolutionInfo(DIGIMON.TOYAGUMON_SUKA, DIGIMON.KINGSUKAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+];
+
+DIGIMON_EVOLUTIONS[DIGIMON.KINGSUKAMON] = [];
 //#endregion
 //#region TSUKAIMON
 DIGIMON_EVOLUTIONS[DIGIMON.TSUKAIMON] = [
@@ -13601,7 +13667,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.BARBAMONX] = [];
 //#endregion
 //#region TSUKAIMON_MURMUKUS
 DIGIMON_EVOLUTIONS[DIGIMON.TSUKAIMON_MURMUKUS] = [
-    new EvolutionInfo(DIGIMON.TSUKAIMON_MURMUKUS, DIGIMON.DEVIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.TSUKAIMON_MURMUKUS, DIGIMON.DEVIMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
 ];
 
 // In PICODEVIMON line
@@ -13656,7 +13722,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.VEEMON_IMPERIAL] = [
 DIGIMON_EVOLUTIONS[DIGIMON.VEEMON_VEEDRA] = [
     new EvolutionInfo(DIGIMON.VEEMON_VEEDRA, DIGIMON.VEEDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.VEEMON_VEEDRA, DIGIMON.FLADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.VEEMON_VEEDRA, DIGIMON.GARGOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.VEEMON_VEEDRA, DIGIMON.GARGOYLEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.VEEMON_VEEDRA, DIGIMON.MAGNAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
@@ -13676,7 +13742,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.ULFORCEVEEDRAMONX] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.FLADRAMON] = [];
 
-DIGIMON_EVOLUTIONS[DIGIMON.GARGOMON] = [];
+DIGIMON_EVOLUTIONS[DIGIMON.GARGOYLEMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MAGNAMON] = [
     new EvolutionInfo(DIGIMON.VEEMON_VEEDRA, DIGIMON.MAGNAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
@@ -13691,7 +13757,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.MAGNAMONX] = [
 DIGIMON_EVOLUTIONS[DIGIMON.VEEMON_VENGEFUL] = [
     new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.EXVEEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.FLADRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
-    new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.GARGOMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.GARGOYLEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.LIGHDRAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.YAKSAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.VEEMON_VENGEFUL, DIGIMON.MAGNAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
@@ -13746,31 +13812,31 @@ DIGIMON_EVOLUTIONS[DIGIMON.WORMMON_IMPERIAL] = [
 //#endregion
 //#region XUANWUMON
 DIGIMON_EVOLUTIONS[DIGIMON.XUANWUMON] = [
-    new EvolutionInfo(DIGIMON.XUANWUMON, DIGIMON.XUANWUMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.XUANWUMON, DIGIMON.XUANWUMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.XUANWUMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.XUANWUMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.XUANWUMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region ZHUQIAOMON
 DIGIMON_EVOLUTIONS[DIGIMON.ZHUQIAOMON] = [
-    new EvolutionInfo(DIGIMON.ZHUQIAOMON, DIGIMON.ZHUQIAOMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ZHUQIAOMON, DIGIMON.ZHUQIAOMON_ULTIMATE, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ZHUQIAOMON_ULTIMATE] = [
-    new EvolutionInfo(DIGIMON.ZHUQIAOMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ZHUQIAOMON, DIGIMON.HUANGLONGMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
 //#region Jogress Digimon
 DIGIMON_EVOLUTIONS[DIGIMON.ALPHAMON_OURYUKEN] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKENX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ALPHAMON_OURYUKENX] = [
-    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKEN_AWAKEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKEN_AWAKEN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DORUMON_ALPHA, DIGIMON.ALPHAMON_OURYUKEN_AWAKEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.RYUDAMON, DIGIMON.ALPHAMON_OURYUKEN_AWAKEN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ALPHAMON_OURYUKEN_AWAKEN] = [];
@@ -13789,17 +13855,17 @@ DIGIMON_EVOLUTIONS[DIGIMON.CHAOSMON] = [];
 DIGIMON_EVOLUTIONS[DIGIMON.COSMIC_SUSANOOMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.EXAMON] = [
-    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.EXAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.EXAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.DRACOMON_BLUE, DIGIMON.EXAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DRACOMON_GREEN, DIGIMON.EXAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.EXAMONX] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HUANGLONGMON] = [
-    new EvolutionInfo(DIGIMON.BAIHUMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.QINGLONGMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.XUANWUMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.ZHUQIAOMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BAIHUMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.QINGLONGMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.XUANWUMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.ZHUQIAOMON, DIGIMON.HUANGLONGMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.HUANGLONGMON_SHIN] = [];
@@ -13834,22 +13900,22 @@ DIGIMON_EVOLUTIONS[DIGIMON.MILLENNIUMON] = [
 DIGIMON_EVOLUTIONS[DIGIMON.MOONMILLENNIUMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMON] = [
-    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMONX] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMON_ALTERS] = [
-    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.OMEGAMON_ALTERB, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.OMEGAMON_ALTERB, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB_BLITZ, DIGIMON.OMEGAMON_ALTERB, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON_CRES, DIGIMON.OMEGAMON_ALTERB, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMON_ALTERB] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMON_ZWART] = [
-    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.OMEGAMON_ZWARTD, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.OMEGAMON_ZWARTD, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.AGUMONB, DIGIMON.OMEGAMON_ZWARTD, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMONB, DIGIMON.OMEGAMON_ZWARTD, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMON_ZWARTD] = [];
@@ -13866,8 +13932,8 @@ DIGIMON_EVOLUTIONS[DIGIMON.RAFFLESIMON] = [];
 DIGIMON_EVOLUTIONS[DIGIMON.RUSTTYRANNOMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHAKKOUMON_JOGRESS] = [
-    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.SLASHANGEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SLASHANGEMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.ARMADIMON_SHAKKOU, DIGIMON.SLASHANGEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.PATAMON_SHAKKOU, DIGIMON.SLASHANGEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SILPHYMON_JOGRESS] = [
@@ -13878,8 +13944,8 @@ DIGIMON_EVOLUTIONS[DIGIMON.SILPHYMON_JOGRESS] = [
 DIGIMON_EVOLUTIONS[DIGIMON.SLASHANGEMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SUSANOOMON] = [
-    new EvolutionInfo(DIGIMON.KAISERGREYMON, DIGIMON.SUSANOOMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.MAGNAGARURUMON, DIGIMON.SUSANOOMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.KAISERGREYMON, DIGIMON.SUSANOOMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.MAGNAGARURUMON, DIGIMON.SUSANOOMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SUSANOOMON_SHIN] = [];
@@ -13890,34 +13956,34 @@ DIGIMON_EVOLUTIONS[DIGIMON.VALKYRIMON] = [];
 DIGIMON_EVOLUTIONS[DIGIMON.JETMERVAMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.METALGREYMON_XROS] = [
-    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.ZEKEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.ZEKEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.ZEKEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.ZEKEGREYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMONDX] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMONX2] = [
-    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX3, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX3, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX3, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX3, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMONX3] = [
-    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX4, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMONX4] = [
-    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.STARMONS, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.BALLISTAMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.DORULUMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.SHOUTMON, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.STARMONS, DIGIMON.SHOUTMONX5, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHOUTMONX5] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ZEKEGREYMON] = [
-    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.SHOUTMONDX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
-    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.SHOUTMONDX, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.GREYMON_XROS, DIGIMON.SHOUTMONDX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.MAILBIRDRAMON, DIGIMON.SHOUTMONDX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
