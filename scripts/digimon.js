@@ -617,6 +617,9 @@ const DIGIMON = Object.freeze({
     ALLOMON:"Allomon",
     SHURIMON:"Shurimon",
     //#endregion
+    //#region HOUSEMON
+    HOUSEMON:"Housemon",
+    //#endregion
     //#region IMPMON
     IMPMON:"Impmon",
     ICEDEVIMON:"IceDevimon",
@@ -664,6 +667,9 @@ const DIGIMON = Object.freeze({
     MAMEMON:"Mamemon",
     BIGMAMEMON:"BigMamemon",
     PRINCEMAMEMON:"PrinceMamemon",
+    METALMAMEMON:"MetalMamemon",
+    KOKUWAMONX:"KokuwamonX",
+    MAMEMONX:"MamemonX",
     //#endregion
     //#region KOTEMON
     KOTEMON:"Kotemon",
@@ -809,6 +815,7 @@ const DIGIMON = Object.freeze({
     // In PALMON_APOCALY line
     // JUREIMON:"Jureimon",
     // PINOCCHIMON:"Pinocchimon",
+    PINOCCHIMON_SHIN:"Pinocchimon_Shin",
     ANCIENTTROIAMON:"AncientTroiamon",
     // In BETAMON line
     // APOCALYMON:"Apocalymon",
@@ -5963,6 +5970,24 @@ DIGIMON_DATA[DIGIMON.SHURIMON] = {
     base: [DIGIMON.HAWKMON_SILPHY],
 };
 //#endregion
+//#region HOUSEMON
+DIGIMON_DATA[DIGIMON.HOUSEMON] = {
+    id: DIGIMON.HOUSEMON,
+    names: {
+        japanese:"Housemon",
+        english:"Housemon",
+        game:"Housemon",
+    },
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.TODO,
+    class: CLASS.TA,
+    rank: RANK.SSS,
+    family: [FAMILY.NSO, FAMILY.JT, FAMILY.UK],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
+    base: [DIGIMON.HOUSEMON],
+};
+//#endregion
 //#region IMPMON
 DIGIMON_DATA[DIGIMON.IMPMON] = {
     id: DIGIMON.IMPMON,
@@ -6480,6 +6505,57 @@ DIGIMON_DATA[DIGIMON.PRINCEMAMEMON] = {
     class: CLASS.TODO,
     rank: RANK.TODO,
     family: [FAMILY.DA, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
+    base: [DIGIMON.KOKUWAMON],
+};
+
+DIGIMON_DATA[DIGIMON.METALMAMEMON] = {
+    id: DIGIMON.METALMAMEMON,
+    names: {
+        japanese:"MetalMamemon",
+        english:"MetalMamemon",
+        game:"MetalMamemon",
+    },
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATE,
+    class: CLASS.SK,
+    rank: RANK.SSS,
+    family: [FAMILY.ME, FAMILY.VB],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
+    base: [DIGIMON.KOKUWAMON],
+};
+
+DIGIMON_DATA[DIGIMON.KOKUWAMONX] = {
+    id: DIGIMON.KOKUWAMONX,
+    names: {
+        japanese:"Kokuwamon X",
+        english:"Kokuwamon X",
+        game:"Kokuwamon X",
+    },
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.ROOKIEX,
+    class: CLASS.NONE,
+    rank: RANK.NONE,
+    family: [FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
+    base: [DIGIMON.KOKUWAMON],
+};
+
+DIGIMON_DATA[DIGIMON.MAMEMONX] = {
+    id: DIGIMON.MAMEMONX,
+    names: {
+        japanese:"Mamemon X",
+        english:"Mamemon X",
+        game:"Mamemon X",
+    },
+    type: ATTRIBUTES.DATA,
+    element: ATTRIBUTES.STEEL,
+    stage: STAGE.ULTIMATEX,
+    class: CLASS.AA,
+    rank: RANK.SSS,
+    family: [FAMILY.ME],
     ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
     base: [DIGIMON.KOKUWAMON],
 };
@@ -7840,6 +7916,23 @@ DIGIMON_DATA[DIGIMON.PALMON_WOOD].base = [DIGIMON.PALMON_WOOD];
 // In PALMON_APOCALY line
 // DIGIMON_DATA[DIGIMON.JUREIMON] = {};
 // DIGIMON_DATA[DIGIMON.PINOCCHIMON] = {};
+
+DIGIMON_DATA[DIGIMON.PINOCCHIMON_SHIN] = {
+    id: DIGIMON.PINOCCHIMON_SHIN,
+    names: {
+        japanese:"Pinocchimon (Shin)",
+        english:"Puppetmon (Shin)",
+        game:"Pinochimon (Shin)",
+    },
+    type: ATTRIBUTES.VIRUS,
+    element: ATTRIBUTES.WOOD,
+    stage: STAGE.MEGA,
+    class: CLASS.AA,
+    rank: RANK.SSS,
+    family: [FAMILY.NSO, FAMILY.JT, FAMILY.WG],
+    ride_item: new UnlockInfo(RIDE_ITEMS.NONE),
+    base: [DIGIMON.PALMON_WOOD],
+};
 
 DIGIMON_DATA[DIGIMON.ANCIENTTROIAMON] = {
     id: DIGIMON.ANCIENTTROIAMON,
@@ -12603,6 +12696,9 @@ DIGIMON_EVOLUTIONS[DIGIMON.ALLOMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.SHURIMON] = [];
 //#endregion
+//#region HOUSEMON
+DIGIMON_EVOLUTIONS[DIGIMON.HOUSEMON] = [];
+//#endregion
 //#region IMPMON
 DIGIMON_EVOLUTIONS[DIGIMON.IMPMON] = [
     new EvolutionInfo(DIGIMON.IMPMON, DIGIMON.ICEDEVIMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
@@ -12704,10 +12800,12 @@ DIGIMON_EVOLUTIONS[DIGIMON.SINDURAMON] = [];
 //#region KOKUWAMON
 DIGIMON_EVOLUTIONS[DIGIMON.KOKUWAMON] = [
     new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.THUNDERMON, new UnlockInfo(EVOLUTION_ITEMS.NONE)),
+    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.KOKUWAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.THUNDERMON] = [
     new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.MAMEMON, new UnlockInfo(EVOLUTION_ITEMS.EVOLUTER, 4)),
+    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.METALMAMEMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.MAMEMON] = [
@@ -12719,6 +12817,14 @@ DIGIMON_EVOLUTIONS[DIGIMON.BIGMAMEMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PRINCEMAMEMON] = [];
+
+DIGIMON_EVOLUTIONS[DIGIMON.METALMAMEMON] = [];
+
+DIGIMON_EVOLUTIONS[DIGIMON.KOKUWAMONX] = [
+    new EvolutionInfo(DIGIMON.KOKUWAMON, DIGIMON.MAMEMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+];
+
+DIGIMON_EVOLUTIONS[DIGIMON.MAMEMONX] = [];
 //#endregion
 //#region KOTEMON
 DIGIMON_EVOLUTIONS[DIGIMON.KOTEMON] = [
@@ -13020,6 +13126,7 @@ DIGIMON_EVOLUTIONS[DIGIMON.JUREIMON] = [
 ];
 
 DIGIMON_EVOLUTIONS[DIGIMON.PINOCCHIMON] = [
+    new EvolutionInfo(DIGIMON.PALMON_WOOD, DIGIMON.PINOCCHIMON_SHIN, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.PALMON_WOOD, DIGIMON.ANCIENTTROIAMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
 //#endregion
@@ -13063,6 +13170,8 @@ DIGIMON_EVOLUTIONS[DIGIMON.PALMON_WOOD] = [
 // In PALMON_APOCALY line
 // DIGIMON_EVOLUTIONS[DIGIMON.JUREIMON] = [];
 // DIGIMON_EVOLUTIONS[DIGIMON.PINOCCHIMON] = [];
+
+DIGIMON_EVOLUTIONS[DIGIMON.PINOCCHIMON_SHIN] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.ANCIENTTROIAMON] = [
     new EvolutionInfo(DIGIMON.PALMON_WOOD, DIGIMON.APOCALYMON, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
