@@ -11,7 +11,7 @@ function DEBUG_DISPLAY() {
     Object.values(DIGIMON).forEach(digimonId => {
         Object.values(DIGIMON_DATA[digimonId].base).forEach(baseDigimon => {
             if (baseDigimonArray.indexOf(baseDigimon) == -1) {
-                displayPreviewDigimon(baseDigimon);
+                displayDigimon(baseDigimon);
                 baseDigimonArray.push(baseDigimon);
             }
         });
@@ -28,7 +28,7 @@ function DEBUG_DISPLAY() {
 }
 
 // Function to display the Digimon passed in in the preview
-function displayPreviewDigimon(digimonID) {
+function displayDigimon(digimonID) {
     let template = document.getElementById("digimon-preview");
     let digimonPreviewDiv = document.getElementById("digimon-list");
     // html div holding all the Digimon's information
@@ -78,7 +78,7 @@ function displayPreviewDigimon(digimonID) {
 
     digimonInfo = template.content.cloneNode(true);
     // TODO: Change names to use the one selected by the player, instead of specifically "japanese"
-    digimonInfo.querySelector("h3").innerHTML = DIGIMON_DATA[digimonID].names.japanese;
+    digimonInfo.querySelector("p").innerHTML = DIGIMON_DATA[digimonID].names.japanese;
     digimonInfo.querySelector('img[data-icon=digimon]').src += DIGIMON_DATA[digimonID].id + ".png";
     digimonInfo.querySelector('img[data-icon=digimon]').alt = DIGIMON_DATA[digimonID].names.japanese + " portrait";
     
@@ -125,9 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //     console.log(randomDigimon);
     //     randomDigimonArray.push(randomDigimon);
     // }
-    // displayPreviewDigimon(randomDigimonArray[0]);
-    // displayPreviewDigimon(randomDigimonArray[1]);
-    // displayPreviewDigimon(randomDigimonArray[2]);
+    // displayDigimon(randomDigimonArray[0]);
+    // displayDigimon(randomDigimonArray[1]);
+    // displayDigimon(randomDigimonArray[2]);
 
     DEBUG_DISPLAY();
 })

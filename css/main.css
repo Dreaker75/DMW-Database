@@ -1,0 +1,111 @@
+body {
+    background-color: #021C36;
+    color: #e7d535;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.section {
+    background-color: #1a3e75;
+    width: 30%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.digimon-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline;
+}
+
+.horizontal-list {
+    /* display: flex; */
+    flex-direction: column; 
+    /* justify-content: space-between; */
+    /* background-color: green; */
+    padding-bottom: 1%;
+}
+
+.digimon-preview {
+    /* min-width: 150px; */
+    margin: 1%;
+    background-color: #01204D;
+    /* display: inline-block; */
+    text-align: center;
+}
+
+.digimon-preview h4 {
+    /* display: inline; */
+    padding: 0%;
+    margin: 0%;
+}
+
+.attributes-container p {
+    margin: 0%;
+}
+
+.attributes-container h4 {
+    display: inline;
+    font-size: 1.5em;
+}
+
+.information-container p {
+    display: inline-block;
+    margin: 0%;
+}
+
+.information-group {
+    /* background-color: #e735ac; */
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+    align-items: center;
+    /* flex: content; */
+}
+
+/* .information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+/* .attributes-container {
+    width: 30%;
+    background-color: rebeccapurple;
+} */
+
+.image-container {
+    flex-grow: 1;
+}
+
+.image-container img {
+    width: 85%;
+}
+
+.digimon-information {
+    /* background-color: rgb(207, 113, 113); */
+    min-width: 80%;
+}
+
+.information-container {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: rgb(131, 35, 35); */
+}
+
+.information-container div + div {
+    padding: 0% 0% 0% 0%;
+}
+
+@media(max-width: 500px) {
+    /* TODO: Add responsive code for the site here, max width might need to be changed */
+}

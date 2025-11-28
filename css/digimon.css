@@ -1,0 +1,76 @@
+body {
+    background-color: #021C36;
+    color: #e7d535;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+.section {
+    background-color: #1a3e75;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.digimon-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline;
+}
+
+.horizontal-list {
+    flex-direction: column;
+    padding-bottom: 1%;
+}
+
+.digimon-preview {
+    margin: 1%;
+    background-color: #01204D;
+    text-align: center;
+}
+
+.digimon-preview h4 {
+    padding: 0%;
+    margin: 0%;
+}
+
+.attributes-container p {
+    margin: 0%;
+}
+
+.attributes-container h4 {
+    display: inline;
+    font-size: 1.5em;
+}
+
+.information-container p {
+    display: inline-block;
+    margin: 0%;
+}
+
+.information-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.information-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.information-container div + div {
+    /* padding: 0% 0% 0% 0%; */
+}
+
+@media(max-width: 500px) {
+    /* TODO: Add responsive code for the site here, max width might need to be changed */
+}

@@ -1,36 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/digimon.css">
+    <script type="text/javascript" src="scripts/digimon_data.js"></script>
     <script type="text/javascript" src="scripts/digimon.js"></script>
-    <script type="text/javascript" src="scripts/app.js"></script>
     <title>DMW Database</title>
 </head>
+
 <body>
     <h1>DMW Database</h1>
     <div class="section">
-        <h2>Digimon</h2>
+        <h2>Digimon Info</h2>
         <div class="horizontal-list" id="digimon-list">
             <template id="digimon-preview">
                 <div class="digimon-preview">
-                    <h3>Digimon Name</h3>
-                    <img data-icon="digimon" src="images/icons/digimon/" alt="">
-                    <!-- <p>Level 120</p> -->
-                    <h4>Attributes</h4>
-                    <p data-list="attributes">
-                        <!-- TODO: Add tooltip that shows the name of the attribute when the icon is hovered -->
-                    </p>
-                    <h4>Evolutions ❌</h4>
-                    <p><span data-evolutions="current"></span>/<span data-evolutions="total"></span></p>
-                    <h4>Skill Exp ❌</h4>
-                    <p><span data-skill-mastery="current"></span>/<span data-skill-mastery="total"></span></p>
-                    <h4>Ride Modes ❌</h4>
-                    <p><span data-rides="current"></span>/<span data-rides="total"></span></p>
+                    <p class="digimon-name">Digimon Name</p>
+                    <div class="information-group">
+                        <div class="image-container">
+                            <img data-icon="digimon" src="images/icons/digimon/" alt="">
+                        </div>
+                        <div class="digimon-information">
+                            <p>Level 120</p>
+                            <div class="information-container">
+                                <div>
+                                    <h4>Skill Exp ❌</h4>
+                                    <p><span data-skill-mastery="current"></span>/<span
+                                            data-skill-mastery="total"></span></p>
+                                </div>
+                                <div>
+                                    <h4>Rides ❌</h4>
+                                    <p><span data-rides="current"></span>/<span data-rides="total"></span></p>
+                                </div>
+                            </div>
+                            <div class="attributes-container">
+                                <!-- <h4>Attributes</h4> -->
+                                <p data-list="attributes">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </template>
         </div>
     </div>
 </body>
+
 </html>
