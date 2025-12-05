@@ -1182,6 +1182,7 @@ const DIGIMON = Object.freeze({
     MILLENNIUMON:"Millenniumon",
     MOONMILLENNIUMON:"MoonMillenniumon",
     OMEGAMON:"Omegamon",
+    OMEGAMONMM:"OmegamonMM",
     OMEGAMONX:"OmegamonX",
     OMEGAMON_ALTERS:"Omegamon_AlterS",
     OMEGAMON_ALTERB:"Omegamon_AlterB",
@@ -1255,6 +1256,7 @@ const CLASS = {
     SK:"SK",
     TA:"TA",
     SUP:"SUP",
+    HYB:"HYB",
     NONE:"None",
 }
 
@@ -1267,6 +1269,7 @@ const RANK = {
     SS_PLUS:"SS+",
     SSS:"SSS",
     SSS_PLUS:"SSS+",
+    U:"U",
     NONE:"None",
 }
 
@@ -11403,6 +11406,23 @@ DIGIMON_DATA[DIGIMON.OMEGAMON] = {
     base: [DIGIMON.AGUMON, DIGIMON.GABUMON],
 };
 
+DIGIMON_DATA[DIGIMON.OMEGAMONMM] = {
+    id: DIGIMON.OMEGAMONMM,
+    names: {
+        japanese:"Omegamon (Merciful Mode)",
+        english:"Omnimon (Merciful Mode)",
+        game:"Omegamon Merciful Mode",
+    },
+    type: ATTRIBUTES.VACCINE,
+    element: ATTRIBUTES.LIGHT,
+    stage: STAGE.JOGRESS,
+    class: CLASS.HYB,
+    rank: RANK.U,
+    family: [FAMILY.VB, FAMILY.WG, FAMILY.ME],
+    ride_item: new UnlockInfo(RIDE_ITEMS.TODO),
+    base: [DIGIMON.AGUMON, DIGIMON.GABUMON],
+};
+
 DIGIMON_DATA[DIGIMON.OMEGAMONX] = {
     id: DIGIMON.OMEGAMONX,
     names: {
@@ -14379,8 +14399,12 @@ DIGIMON_EVOLUTIONS[DIGIMON.MOONMILLENNIUMON] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMON] = [
     new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.AGUMON, DIGIMON.OMEGAMONMM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
     new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMONX, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
+    new EvolutionInfo(DIGIMON.GABUMON, DIGIMON.OMEGAMONMM, new UnlockInfo(EVOLUTION_ITEMS.TODO)),
 ];
+
+DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMONMM] = [];
 
 DIGIMON_EVOLUTIONS[DIGIMON.OMEGAMONX] = [];
 
